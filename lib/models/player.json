@@ -1,0 +1,21 @@
+{
+    "uid" : "",
+    "name" : "",
+    "email" : "",
+    "photo" : "",
+    "unitAchived": [
+        {
+            "id" : "1",
+            "level": "1",
+            "stageAchieved": [
+                {
+                    "id" : "1",
+                    "level": "1",
+                    "isPlayed": true,
+                    "medalAchieved": "Silver",
+                    "score": 75
+                }
+            ]
+        }
+    ]
+}
