@@ -26,6 +26,8 @@ Widget pembahasanAppbarWidget({required BuildContext context, String? title}) {
               width: 45,
               child: GestureDetector(
                 onTap: () {
+                  ClickHelper.clickSound();
+
                   Navigator.pop(context);
                 },
                 child: SizedBox(

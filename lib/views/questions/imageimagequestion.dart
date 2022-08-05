@@ -3,105 +3,120 @@ part of 'questions.dart';
 Widget imageImageQuestion({
   Quiz? quiz,
   InGameViewModel? viewModel,
+  String? character,
 }) {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            width: 200,
-            decoration: BoxDecoration(
-              color: lightMint,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Stack(
-              alignment: Alignment.bottomRight,
-              children: [
-                Center(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          top: 5,
-                          left: 5,
-                          right: 5,
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
-                          child: Image.network(
-                              quiz!.gambar ??
-                                  'https://sdnsusukan07.sch.id/asset/images/noimage.jpg',
-                              loadingBuilder: (context, widget,
-                                      loadingProgress) =>
-                                  (loadingProgress == null)
-                                      ? widget
-                                      : const SizedBox(
-                                          width: 180,
-                                          height: 120,
-                                          child: Center(
-                                            child: CircularProgressIndicator(),
-                                          ),
-                                        ),
-                              errorBuilder: (context, exception, stackTrace) {
-                                return SizedBox(
-                                  width: 180,
-                                  height: 120,
-                                  child: Center(
-                                    child: Text(
-                                      "Image Error",
-                                      style: interheadline3.copyWith(
-                                          color: davysGrey),
+      SizedBox(
+        width: 350,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: 200,
+              decoration: BoxDecoration(
+                color: lightMint,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Stack(
+                alignment: Alignment.bottomRight,
+                children: [
+                  Center(
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            top: 5,
+                            left: 5,
+                            right: 5,
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.network(
+                                quiz!.gambar ??
+                                    'https://sdnsusukan07.sch.id/asset/images/noimage.jpg',
+                                loadingBuilder:
+                                    (context, widget, loadingProgress) =>
+                                        (loadingProgress == null)
+                                            ? widget
+                                            : const SizedBox(
+                                                width: 180,
+                                                height: 120,
+                                                child: Center(
+                                                  child:
+                                                      CircularProgressIndicator(),
+                                                ),
+                                              ),
+                                errorBuilder: (context, exception, stackTrace) {
+                                  return SizedBox(
+                                    width: 180,
+                                    height: 120,
+                                    child: Center(
+                                      child: Text(
+                                        "Image Error",
+                                        style: interheadline3.copyWith(
+                                            color: davysGrey),
+                                      ),
                                     ),
-                                  ),
-                                );
-                              },
-                              width: 180,
-                              height: 120,
-                              fit: BoxFit.fill),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Text(
-                          quiz.pertanyaan ??
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
-                          style: interheadline7.copyWith(
-                            color: spanishGray,
+                                  );
+                                },
+                                width: 180,
+                                height: 120,
+                                fit: BoxFit.fill),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                (viewModel?.isPlayingSound == true)
-                    ? const Padding(
-                        padding: EdgeInsets.only(bottom: 10, right: 10),
-                        child: SizedBox(
-                            height: 20,
-                            width: 20,
-                            child: CircularProgressIndicator()),
-                      )
-                    : IconButton(
-                        onPressed: () {
-                          viewModel!.playSound!(quiz.sound!);
-                        },
-                        icon: Icon(
-                          Icons.volume_up_rounded,
-                          color: davysGrey,
+                        Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Text(
+                            quiz.pertanyaan ??
+                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                            style: interheadline7.copyWith(
+                              color: spanishGray,
+                            ),
+                          ),
                         ),
-                      ),
-              ],
+                      ],
+                    ),
+                  ),
+                  (viewModel?.isPlayingSound == true)
+                      ? const Padding(
+                          padding: EdgeInsets.only(bottom: 10, right: 10),
+                          child: SizedBox(
+                              height: 20,
+                              width: 20,
+                              child: CircularProgressIndicator()),
+                        )
+                      : IconButton(
+                          onPressed: () {
+                            ClickHelper.clickSound();
+
+                            viewModel!.playSound!(quiz.sound!);
+                          },
+                          icon: Icon(
+                            Icons.volume_up_rounded,
+                            color: davysGrey,
+                          ),
+                        ),
+                ],
+              ),
             ),
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color: silver,
-          ),
-        ],
+            Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: lightCyan,
+              ),
+              child: RiveAnimation.asset(
+                "assets/newcharacter.riv",
+                artboard: character ?? "Avatar 1",
+                controllers: [viewModel!.characterController!],
+              ),
+            ),
+          ],
+        ),
       ),
       Padding(
         padding: const EdgeInsets.only(top: 40),
@@ -113,12 +128,14 @@ Widget imageImageQuestion({
                 (e) => bigImageButtonWidget(
                   image: e.data,
                   onTap: () {
-                    viewModel?.addQuizAnswered!(
+                    ClickHelper.clickSound();
+
+                    viewModel.addQuizAnswered!(
                       quiz,
                       e,
                     );
                   },
-                  primaryColor: viewModel!.isQuizAnswered!(quiz.id!, e.data!)
+                  primaryColor: viewModel.isQuizAnswered!(quiz.id!, e.data!)
                       ? naplesYellow
                       : lightCyan,
                   secondaryColor: viewModel.isQuizAnswered!(quiz.id!, e.data!)

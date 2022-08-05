@@ -1,6 +1,7 @@
 part of 'widgets.dart';
 
-Widget gameAppbarWidget() {
+Widget gameAppbarWidget(
+    {String? medalBronze, String? medalSilver, String? medalGold}) {
   return Container(
     color: white,
     child: Padding(
@@ -15,9 +16,17 @@ Widget gameAppbarWidget() {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                medalPointWidget(),
-                medalPointWidget(iconColor: silver),
-                medalPointWidget(iconColor: gold),
+                medalPointWidget(
+                  text: medalGold,
+                ),
+                medalPointWidget(
+                  iconColor: silver,
+                  text: medalSilver,
+                ),
+                medalPointWidget(
+                  iconColor: gold,
+                  text: medalBronze,
+                ),
               ],
             ),
           ),

@@ -3,6 +3,7 @@ part of 'widgets.dart';
 Widget gameButtonWidget({
   bool? isPlayed = false,
   bool? isLocked = true,
+  String? text,
   String? medal,
   required VoidCallback onTap,
 }) =>
@@ -62,7 +63,7 @@ Widget gameButtonWidget({
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: Text(
-              'Lorem ipsum',
+              text ?? 'Lorem ipsum',
               style: interheadline5.copyWith(color: davysGrey),
             ),
           ),

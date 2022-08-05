@@ -50,18 +50,27 @@ class FireAuthHelper {
       if (e.code == 'weak-password') {
         modalErrorAuthWidget(
             context: context,
-            description: 'The password provided is too weak.',
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Password yang ingin kamu gunakan terlalu mudah, coba buat password yang lebih susah',
+            redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       } else if (e.code == 'email-already-in-use') {
         modalErrorAuthWidget(
             context: context,
-            description: 'The account already exists for that email.',
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Email yang ingin kamu gunakan sudah terdaftar, coba gunakan email lain yang kamu punya',
+            redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       }
     } catch (e) {
       modalErrorAuthWidget(
           context: context,
-          description: e.toString(),
+          title: 'Kamu tidak perlu panik !',
+          description:
+              'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.toString()}"',
+          redButtonText: 'Dimengerti',
           onTapRed: () => Navigator.pop(context));
     }
 
@@ -91,17 +100,26 @@ class FireAuthHelper {
       if (e.code == 'user-not-found') {
         modalErrorAuthWidget(
             context: context,
-            description: 'No user found for that email.',
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Pastikan lagi email kamu, sepertinya email yang kamu isi salah atau belum terdaftar',
+            redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       } else if (e.code == 'wrong-password') {
         modalErrorAuthWidget(
             context: context,
-            description: 'Wrong password provided.',
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Pastikan lagi password kamu, sepertinya password yang kamu isi salah atau kurang tepat',
+            redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       } else {
         modalErrorAuthWidget(
             context: context,
-            description: e.toString(),
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.toString()}"',
+            redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       }
     }

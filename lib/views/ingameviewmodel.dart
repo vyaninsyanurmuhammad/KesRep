@@ -15,6 +15,8 @@ class InGameViewModel {
 
   final bool? isLoading;
 
+  final RiveAnimationController? characterController;
+
   void Function()? nextQuiz;
   void Function()? backQuiz;
   void Function(int)? chooseQuiz;
@@ -25,8 +27,6 @@ class InGameViewModel {
   double Function()? quizScore;
   double Function()? appbarTotalFinished;
   Future<void> Function(String)? playSound;
-
-  final bool? isOffline;
 
   InGameViewModel({
     this.quizzes,
@@ -49,10 +49,13 @@ class InGameViewModel {
     this.isPlayingSound,
     this.playSound,
     this.isLoading,
-    this.isOffline,
+    this.characterController,
   });
 
   factory InGameViewModel.create(Store<AppState> store) {
+    RiveAnimationController? _characterController =
+        store.state.ingameState?.characterController;
+
     _nextQuiz() {
       if (store.state.ingameState?.pageController?.page !=
           store.state.ingameState!.quizzes!.length - 1) {
@@ -203,8 +206,10 @@ class InGameViewModel {
     }
 
     _playSound(String sound) async {
-      AudioPlayer _audioPlayer = AudioPlayer();
       bool? _isPlayingSound = store.state.ingameState?.isPlayingSound;
+      store.dispatch(IsPlayingSoundAction(isPlayingSound: true));
+
+      AudioPlayer _audioPlayer = AudioPlayer();
       // audioCache.play("sounds/1.mp3");
 
       String _url = await PlayerHelper.getSoundUrl(
@@ -212,12 +217,12 @@ class InGameViewModel {
         name: sound,
       );
 
-      if (!_isPlayingSound!) {
-        store.dispatch(IsPlayingSoundAction(isPlayingSound: true));
+      await _audioPlayer.setVolume(1);
 
+      if (!_isPlayingSound!) {
         // _audioPlayer.setSourceUrl(_url);
 
-        _audioPlayer.play(UrlSource(_url));
+        await _audioPlayer.play(UrlSource(_url));
 
         _audioPlayer.onPlayerComplete.listen((event) {
           store.dispatch(IsPlayingSoundAction(isPlayingSound: false));
@@ -249,7 +254,7 @@ class InGameViewModel {
       isPlayingSound: store.state.ingameState?.isPlayingSound,
       playSound: _playSound,
       isLoading: store.state.ingameState?.isLoading,
-      isOffline: store.state.ingameState?.isOffline,
+      characterController: _characterController,
     );
   }
 }

@@ -1,7 +1,7 @@
-part of 'pages.dart';
+part of 'widgets.dart';
 
-class LoadingInGamePage extends StatelessWidget {
-  const LoadingInGamePage({Key? key}) : super(key: key);
+class LoadingInGameWidget extends StatelessWidget {
+  const LoadingInGameWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

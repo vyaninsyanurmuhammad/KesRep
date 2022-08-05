@@ -12,7 +12,20 @@ class GamePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              gameAppbarWidget(),
+              gameAppbarWidget(
+                medalBronze: MedalHelper.medalCount(
+                        medal: MedalHelper.bronze,
+                        listUnitAchived: viewmodel.player!.unitAchived!)
+                    .toString(),
+                medalSilver: MedalHelper.medalCount(
+                        medal: MedalHelper.silver,
+                        listUnitAchived: viewmodel.player!.unitAchived!)
+                    .toString(),
+                medalGold: MedalHelper.medalCount(
+                        medal: MedalHelper.gold,
+                        listUnitAchived: viewmodel.player!.unitAchived!)
+                    .toString(),
+              ),
               Expanded(
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height,
@@ -75,6 +88,7 @@ class GamePage extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             vertical: 13, horizontal: 20),
                                         child: gameButtonWidget(
+                                          text: e.value.title,
                                           isLocked: viewmodel
                                               .isLockedStage!(e.value.id!),
                                           isPlayed: viewmodel
@@ -84,8 +98,10 @@ class GamePage extends StatelessWidget {
                                               .whichStageAchived!(e.value.id!)
                                               .medalAchieved,
                                           onTap: () {
+                                            ClickHelper.clickSound();
                                             modalPlayGameWidget(
                                               context: context,
+                                              title: e.value.title,
                                               score: viewmodel
                                                   .whichStageAchived!
                                                       (e.value.id!)
@@ -99,6 +115,8 @@ class GamePage extends StatelessWidget {
                                                       (e.value.id!)
                                                   .isPlayed,
                                               onTap: () {
+                                                ClickHelper.clickSound();
+
                                                 Navigator
                                                     .pushNamedAndRemoveUntil(
                                                   context,

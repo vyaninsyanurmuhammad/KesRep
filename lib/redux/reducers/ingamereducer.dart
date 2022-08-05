@@ -15,7 +15,6 @@ final ingameReducer = combineReducers<InGameState?>([
   TypedReducer<InGameState?, ClearRecordAction>(_clearRecordAction),
   TypedReducer<InGameState?, IsPlayingSoundAction>(_isPlayingSoundAction),
   TypedReducer<InGameState?, IsLoadingAction>(_isLoadingAction),
-  TypedReducer<InGameState?, IsInGameOfflineAction>(_isInGameOfflineAction),
 ]);
 
 InGameState? _loadQuizAction(InGameState? state, LoadQuizAction action) {
@@ -111,9 +110,4 @@ InGameState? _isPlayingSoundAction(
 
 InGameState? _isLoadingAction(InGameState? state, IsLoadingAction action) {
   return state?.copyWith(isLoading: action.isLoading);
-}
-
-InGameState? _isInGameOfflineAction(
-    InGameState? state, IsInGameOfflineAction action) {
-  return state?.copyWith(isOffline: action.isOffline);
 }

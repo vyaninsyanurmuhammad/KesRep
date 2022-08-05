@@ -24,16 +24,23 @@ class InGamePage extends StatelessWidget {
       },
       builder: (BuildContext context, InGameViewModel viewModel) {
         return (viewModel.isLoading == true)
-            ? const LoadingInGamePage()
+            ? const LoadingInGameWidget()
             : WillPopScope(
                 onWillPop: () async => await modalCloseGameWidget(
                   context: context,
+                  title: "Ingin memastikan saja",
+                  description:
+                      "Apa kamu yakin ingin keluar dari permainan? karena semua pertanyaan yang telah kamu jawab akan hilang",
                   blueButtonText: "Batal",
                   redButtonText: "Yakin!",
                   onTapBlue: () {
+                    ClickHelper.clickSound();
+
                     Navigator.pop(context);
                   },
                   onTapRed: () {
+                    ClickHelper.clickSound();
+
                     viewModel.clearInGameAndRecordAction!();
                     Navigator.pushNamedAndRemoveUntil(
                         context, '/homepage', (route) => false);
@@ -55,26 +62,35 @@ class InGamePage extends StatelessWidget {
                             controller: viewModel.pageController,
                             physics: const NeverScrollableScrollPhysics(),
                             children: viewModel.quizzes!
+                                .asMap()
+                                .entries
                                 .map(
-                                  (e) => (e.tipe == 'textandtext')
+                                  (e) => (e.value.tipe == 'textandtext')
                                       ? textTextQuestion(
-                                          quiz: e,
+                                          quiz: e.value,
                                           viewModel: viewModel,
-                                        )
-                                      : (e.tipe == 'imageandtext')
+                                          character: CharacterHelper
+                                              .shuffledTenCharacter()[e.key])
+                                      : (e.value.tipe == 'imageandtext')
                                           ? imageTextQuestion(
-                                              quiz: e,
+                                              quiz: e.value,
                                               viewModel: viewModel,
-                                            )
-                                          : (e.tipe == 'imageandimage')
+                                              character: CharacterHelper
+                                                      .shuffledTenCharacter()[
+                                                  e.key])
+                                          : (e.value.tipe == 'imageandimage')
                                               ? imageImageQuestion(
-                                                  quiz: e,
+                                                  quiz: e.value,
                                                   viewModel: viewModel,
-                                                )
+                                                  character: CharacterHelper
+                                                          .shuffledTenCharacter()[
+                                                      e.key])
                                               : textImageQuestion(
-                                                  quiz: e,
+                                                  quiz: e.value,
                                                   viewModel: viewModel,
-                                                ),
+                                                  character: CharacterHelper
+                                                          .shuffledTenCharacter()[
+                                                      e.key]),
                                 )
                                 .toList(),
                           ),
@@ -87,14 +103,13 @@ class InGamePage extends StatelessWidget {
                           children: [
                             bigButtonWidget(
                               onTap: () {
+                                ClickHelper.clickSound();
+
                                 viewModel.backQuiz!();
                               },
                               width: 150,
                               text: 'Sebelumnya',
-                              isDisable: (viewModel.numberOfQuestion ==
-                                          viewModel.quizzes?.length
-                                              .toDouble() ||
-                                      viewModel.numberOfQuestion! < 2)
+                              isDisable: (viewModel.numberOfQuestion! < 2)
                                   ? true
                                   : false,
                               primaryColor: mediumAquamarineLow,
@@ -102,17 +117,26 @@ class InGamePage extends StatelessWidget {
                             ),
                             bigButtonWidget(
                               onTap: () async {
+                                ClickHelper.clickSound();
+
                                 if (viewModel.numberOfQuestion ==
                                         viewModel.quizzes?.length.toDouble() ||
                                     viewModel.numberOfQuestion! > 9.0) {
                                   await modalCloseGameWidget(
                                     context: context,
                                     background: lemonMeringue,
+                                    title: "Ingin memastikan saja",
+                                    description:
+                                        "Apa kamu yakin ingin menyelesaikan permainan? Saya sarankan untuk mengecek kembali jawabanmu",
                                     redButtonText: "Yakin!",
                                     onTapBlue: () {
+                                      ClickHelper.clickSound();
+
                                       Navigator.pop(context);
                                     },
                                     onTapRed: () {
+                                      ClickHelper.clickSound();
+
                                       Navigator.pushNamedAndRemoveUntil(
                                         context,
                                         '/resultpage',

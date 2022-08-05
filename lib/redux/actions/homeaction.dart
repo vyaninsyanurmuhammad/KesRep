@@ -15,9 +15,3 @@ class ChangeTapIndexAction {
 }
 
 class ResetIndexBottomNavbarAction {}
-
-class IsHomeOfflineAction {
-  final bool? isOffline;
-
-  IsHomeOfflineAction({this.isOffline});
-}

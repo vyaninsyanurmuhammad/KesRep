@@ -29,6 +29,8 @@ Future reviewBottomSheetWidget({
                           10,
                           (index) => reviewMiniButtonWidget(
                             onTap: () {
+                              ClickHelper.clickSound();
+
                               viewmodel.chooseQuiz!(index);
                             },
                             noSoal: (index + 1).toString(),
@@ -50,13 +52,22 @@ Future reviewBottomSheetWidget({
                       secondaryColor: cyberYellowLow,
                       height: 35,
                       onTap: () async {
+                        ClickHelper.clickSound();
+
                         await modalCloseGameWidget(
                           background: lemonMeringue,
+                          title: "Ingin memastikan saja",
+                          description:
+                              "Apa kamu yakin ingin menyelesaikan permainan? Saya sarankan untuk mengecek kembali jawabanmu",
                           redButtonText: "Yakin!",
                           onTapBlue: () {
+                            ClickHelper.clickSound();
+
                             Navigator.pop(context);
                           },
                           onTapRed: () {
+                            ClickHelper.clickSound();
+
                             Navigator.pushNamedAndRemoveUntil(
                               context,
                               '/resultpage',

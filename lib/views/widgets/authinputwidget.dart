@@ -1,11 +1,13 @@
 part of 'widgets.dart';
 
-Widget authInputWidget(
-        {String? label,
-        IconData? icon,
-        TextEditingController? controller,
-        String? Function(String?)? validator,
-        FocusNode? focusNode}) =>
+Widget authInputWidget({
+  String? label,
+  IconData? icon,
+  TextEditingController? controller,
+  String? Function(String?)? validator,
+  FocusNode? focusNode,
+  TextInputAction? textInputAction,
+}) =>
     SizedBox(
       height: 45,
       child: TextFormField(
@@ -15,6 +17,7 @@ Widget authInputWidget(
         validator: validator,
         focusNode: focusNode,
         cursorColor: cyanProcess,
+        textInputAction: textInputAction ?? TextInputAction.done,
         decoration: InputDecoration(
           prefixIcon: Icon(
             icon ?? Icons.email_outlined,

@@ -14,8 +14,7 @@ class InGameState {
   bool? isPlayingSound;
   bool? isLoading;
 
-  bool? isOffline;
-  StreamSubscription? internetconnection;
+  RiveAnimationController? characterController;
 
   InGameState({
     this.quizzes,
@@ -28,8 +27,7 @@ class InGameState {
     this.positionStage,
     this.isPlayingSound,
     this.isLoading,
-    this.isOffline,
-    this.internetconnection,
+    this.characterController,
   });
 
   InGameState.initialState() {
@@ -48,26 +46,7 @@ class InGameState {
 
     isLoading = true;
 
-    isOffline = true;
-
-    internetconnection = Connectivity()
-        .onConnectivityChanged
-        .listen((ConnectivityResult result) {
-      // whenevery connection status is changed.
-      if (result == ConnectivityResult.none) {
-        //there is no any connection
-        isOffline = true;
-        store.dispatch(IsHomeOfflineAction(isOffline: isOffline));
-      } else if (result == ConnectivityResult.mobile) {
-        //connection is mobile data network
-        isOffline = false;
-        store.dispatch(IsHomeOfflineAction(isOffline: isOffline));
-      } else if (result == ConnectivityResult.wifi) {
-        //connection is from wifi
-        isOffline = false;
-        store.dispatch(IsHomeOfflineAction(isOffline: isOffline));
-      }
-    });
+    characterController = OneShotAnimation('idle', autoplay: true);
   }
 
   InGameState copyWith({
@@ -81,8 +60,7 @@ class InGameState {
     Stage? positionStage,
     bool? isPlayingSound,
     bool? isLoading,
-    bool? isOffline,
-    StreamSubscription? internetconnection,
+    RiveAnimationController? characterController,
   }) {
     return InGameState(
       quizzes: quizzes ?? this.quizzes,
@@ -95,7 +73,7 @@ class InGameState {
       positionUnit: positionUnit ?? this.positionUnit,
       isPlayingSound: isPlayingSound ?? this.isPlayingSound,
       isLoading: isLoading ?? this.isLoading,
-      isOffline: isOffline ?? this.isOffline,
+      characterController: characterController ?? this.characterController,
     );
   }
 }

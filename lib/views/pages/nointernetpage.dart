@@ -33,7 +33,7 @@ class NoInternetPage extends StatelessWidget {
             SizedBox(
               width: 300,
               child: Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor. Duis aliquam ex lacus, et finibus nibh bibendum sodales.",
+                "Coba pastikan lagi koneksi internet kamu dan tekan tomobol coba lagi di bawah. Jika kamu mengalami kesulitan mintalah bantuan orang disekitarmu !",
                 textAlign: TextAlign.center,
                 style: interheadline4.copyWith(color: white),
               ),

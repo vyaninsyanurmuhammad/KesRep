@@ -8,8 +8,6 @@ class HomeViewModel {
   final RiveAnimationController? profilIconController;
   final RiveAnimationController? materiIconController;
 
-  final bool? isOffline;
-
   HomeViewModel({
     this.indexBottomNavbar,
     this.onChangeTapIndex,
@@ -17,7 +15,6 @@ class HomeViewModel {
     this.homeIconController,
     this.profilIconController,
     this.materiIconController,
-    this.isOffline,
   });
 
   factory HomeViewModel.create(Store<AppState> store) {
@@ -36,6 +33,8 @@ class HomeViewModel {
     }
 
     _onChangeTapIndex(int index) {
+      ClickHelper.clickSound();
+
       store.dispatch(ChangeTapIndexAction(
         indexBottomNavbar: index,
         homeIconController:
@@ -53,7 +52,6 @@ class HomeViewModel {
       homeIconController: store.state.homeState?.homeIconController,
       profilIconController: store.state.homeState?.profilIconController,
       materiIconController: store.state.homeState?.materiIconController,
-      isOffline: store.state.homeState?.isOffline,
     );
   }
 }

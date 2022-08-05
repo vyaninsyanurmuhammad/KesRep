@@ -23,11 +23,17 @@ class ResultPage extends StatelessWidget {
       },
       builder: (BuildContext context, ResultViewModel viewModel) {
         return (viewModel.isLoading == true)
-            ? const LoadingInGamePage()
+            ? const LoadingInGameWidget()
             : WillPopScope(
                 onWillPop: () async => await modalCloseGameWidget(
-                  onTapBlue: () {},
+                  onTapBlue: () {
+                    ClickHelper.clickSound();
+
+                    Navigator.of(context).pop();
+                  },
                   onTapRed: () {
+                    ClickHelper.clickSound();
+
                     viewModel.addResultToFirebase!();
 
                     Navigator.pushNamedAndRemoveUntil(
@@ -45,7 +51,8 @@ class ResultPage extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.only(top: 25.0),
                             child: Text(
-                              'Lorem ipsum',
+                              'Permainan\nSelesai',
+                              textAlign: TextAlign.center,
                               style: interheadline1.copyWith(color: davysGrey),
                             ),
                           ),
@@ -55,7 +62,16 @@ class ResultPage extends StatelessWidget {
                               Icon(
                                 Icons.military_tech_outlined,
                                 size: 145,
-                                color: gold,
+                                color: ScoreHelper.scoreDecider(
+                                            score: viewModel.result!.toInt()) ==
+                                        MedalHelper.bronze
+                                    ? gold
+                                    : ScoreHelper.scoreDecider(
+                                                score: viewModel.result!
+                                                    .toInt()) ==
+                                            MedalHelper.silver
+                                        ? silver
+                                        : cyberYellow,
                               ),
                               const SizedBox(
                                 height: 20,
@@ -64,7 +80,7 @@ class ResultPage extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Skor Kamu',
+                                    'Skor Kamu Sekarang',
                                     style: interheadline3.copyWith(
                                         color: spanishGray),
                                   ),
@@ -83,57 +99,54 @@ class ResultPage extends StatelessWidget {
                                   : const SizedBox(
                                       height: 20,
                                     ),
-                              (viewModel.stageAchieved?.score == null)
+                              (viewModel.stageAchieved?.score == null ||
+                                      viewModel.stageAchieved?.firstScore ==
+                                          null)
                                   ? const SizedBox()
-                                  : (Row(
+                                  : Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        Text(
-                                          'Skor Terbaik Kamu',
-                                          style: interheadline3.copyWith(
-                                              color: spanishGray),
+                                        miniScoreBoxWidget(
+                                          score:
+                                              "${viewModel.stageAchieved?.firstScore!.toDouble().toString()}%",
                                         ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 5),
-                                          child: Text(
-                                            viewModel.stageAchieved!.score!
-                                                    .toDouble()
-                                                    .toString() +
-                                                '%',
-                                            style: interheadline3.copyWith(
-                                                color: davysGrey),
-                                          ),
-                                        )
+                                        const SizedBox(
+                                          width: 20,
+                                        ),
+                                        miniScoreBoxWidget(
+                                          title: "Skor Terbaik",
+                                          backgroundTitle: saffron,
+                                          backgroundScore: mediumChampagne,
+                                          score:
+                                              "${viewModel.stageAchieved?.score!.toDouble().toString()}%",
+                                        ),
                                       ],
-                                    )),
+                                    )
                             ],
                           ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              bigButtonWidget(
-                                text: "Pembahasan",
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                    context,
-                                    '/pembahasanpage',
-                                    arguments: {
-                                      'quizzes': viewModel.quizzes,
-                                      'quizzesAnswered':
-                                          viewModel.quizzesAnswered,
-                                    },
-                                  );
+                          bigButtonWidget(
+                            text: "Pembahasan",
+                            onTap: () {
+                              ClickHelper.clickSound();
+
+                              Navigator.pushNamed(
+                                context,
+                                '/pembahasanpage',
+                                arguments: {
+                                  'quizzes': viewModel.quizzes,
+                                  'quizzesAnswered': viewModel.quizzesAnswered,
                                 },
-                                primaryColor: naplesYellow,
-                                secondaryColor: cyberYellowLow,
-                              ),
-                            ],
+                              );
+                            },
+                            primaryColor: naplesYellow,
+                            secondaryColor: cyberYellowLow,
                           ),
                           bigButtonWidget(
                             text: "Lanjutkan",
                             onTap: () {
+                              ClickHelper.clickSound();
+
                               store.dispatch(
                                   IsLoadingResultAction(isLoading: true));
                               Future.delayed(const Duration(seconds: 5))

@@ -4,6 +4,7 @@ Future modalPlayGameWidget({
   required BuildContext context,
   int? score,
   bool? isPlayed = false,
+  String? title,
   String? medal,
   required VoidCallback onTap,
 }) =>
@@ -34,7 +35,7 @@ Future modalPlayGameWidget({
                   children: [
                     Center(
                       child: Text(
-                        'Lorem ipsum',
+                        title ?? 'Lorem ipsum',
                         style: interheadline3.copyWith(color: Colors.white),
                       ),
                     ),
@@ -42,6 +43,8 @@ Future modalPlayGameWidget({
                       padding: const EdgeInsets.only(right: 15),
                       child: GestureDetector(
                         onTap: () {
+                          ClickHelper.clickSound();
+
                           Navigator.pop(context);
                         },
                         child: Icon(
@@ -90,8 +93,9 @@ Future modalPlayGameWidget({
               Padding(
                 padding: const EdgeInsets.only(bottom: 20),
                 child: bigButtonWidget(
+                  text: "Mulai",
                   onTap: onTap,
-                  width: 200,
+                  width: 135,
                   primaryColor: mediumAquamarineLow,
                   secondaryColor: mediumAquamarine,
                 ),

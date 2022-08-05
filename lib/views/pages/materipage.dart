@@ -30,6 +30,8 @@ class MateriPage extends StatelessWidget {
                   child: materiCardWidget(
                     background: listColor[index % listColor.length],
                     onTap: () {
+                      ClickHelper.clickSound();
+
                       Navigator.pushNamed(context, "/materidetailpage");
                     },
                   ),

@@ -17,9 +17,8 @@ class LoginPage extends StatelessWidget {
             resizeToAvoidBottomInset: true,
             body: Center(
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 55, vertical: 30)
-                        .copyWith(top: 60),
+                padding: const EdgeInsets.symmetric(horizontal: 55)
+                    .copyWith(top: 60, bottom: 40),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -28,7 +27,7 @@ class LoginPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Lorem ipsum dolor sit.',
+                          'Ayo login masuk !',
                           textAlign: TextAlign.left,
                           style: interheadline2.copyWith(color: davysGrey),
                         ),
@@ -36,7 +35,7 @@ class LoginPage extends StatelessWidget {
                           height: 20,
                         ),
                         Text(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                          'Kamu hanya perlu mengisi email dan password yang kamu punya. Jika kamu kesulitan mengisi mintalah bantuan orang disekitarmu !',
                           textAlign: TextAlign.left,
                           style: interheadline4.copyWith(color: spanishGray),
                         ),
@@ -53,6 +52,7 @@ class LoginPage extends StatelessWidget {
                                 validator: (value) =>
                                     ValidatorHelper.validateEmail(email: value),
                                 focusNode: viewModel.focusLoginEmail,
+                                textInputAction: TextInputAction.next,
                               ),
                               const SizedBox(
                                 height: 20,
@@ -74,16 +74,18 @@ class LoginPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Flexible(
+                    Expanded(
                       child: SizedBox(
-                        height: 195,
+                        height: double.infinity,
                         child: Center(
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               bigButtonWidget(
                                 text: "Masuk",
                                 onTap: () {
+                                  ClickHelper.clickSound();
+
                                   if (viewModel.loginFormKey!.currentState!
                                       .validate()) {
                                     viewModel.signInUsingEmailPassword!(
@@ -99,38 +101,55 @@ class LoginPage extends StatelessWidget {
                                 },
                                 width: 200,
                               ),
-                              dividerWidget(),
-                              circleButtonWidget(
-                                onTap: () {
-                                  viewModel.signInUsingGoogle!(context);
-                                },
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Lorem ipsum dolor sit amet,',
-                                    textAlign: TextAlign.center,
-                                    style: interheadline6.copyWith(
-                                        color: spanishGray),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushReplacementNamed(
-                                          context, '/registerpage');
-                                    },
-                                    child: Text(
-                                      'Sign Up',
-                                      textAlign: TextAlign.center,
-                                      style: interheadline6.copyWith(
-                                          color: cyanProcess),
-                                    ),
-                                  )
-                                ],
-                              ),
+                              const SizedBox(height: 25),
+                              (MediaQuery.of(context).viewInsets.bottom == 0.0)
+                                  ? Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        dividerWidget(
+                                            text: "atau masuk dengan"),
+                                        const SizedBox(height: 25),
+                                        circleButtonWidget(
+                                          onTap: () {
+                                            ClickHelper.clickSound();
+
+                                            viewModel
+                                                .signInUsingGoogle!(context);
+                                          },
+                                        ),
+                                        const SizedBox(height: 25),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              'kamu belum punya akun? kamu bisa',
+                                              textAlign: TextAlign.center,
+                                              style: interheadline6.copyWith(
+                                                  color: spanishGray),
+                                            ),
+                                            const SizedBox(
+                                              width: 5,
+                                            ),
+                                            GestureDetector(
+                                              onTap: () {
+                                                ClickHelper.clickSound();
+
+                                                Navigator.pushReplacementNamed(
+                                                    context, '/registerpage');
+                                              },
+                                              child: Text(
+                                                'Register',
+                                                textAlign: TextAlign.center,
+                                                style: interheadline6.copyWith(
+                                                    color: cyanProcess),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ],
+                                    )
+                                  : const SizedBox(),
                             ],
                           ),
                         ),

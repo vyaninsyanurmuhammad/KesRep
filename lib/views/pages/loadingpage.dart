@@ -10,7 +10,7 @@ class LoadingPage extends StatelessWidget {
         if (store.state.authState?.isOffline == true) {
           Future.delayed(const Duration(seconds: 1)).whenComplete(
             () => Navigator.pushNamedAndRemoveUntil(
-                context, '/nointernetpage ', (route) => false),
+                context, '/nointernetpage', (route) => false),
           );
         } else {
           await FireAuthHelper.initializeFirebase(context: context);

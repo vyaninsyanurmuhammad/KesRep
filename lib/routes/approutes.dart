@@ -14,5 +14,6 @@ class AppRoutes {
         '/onboardingpage': (context) => const OnBoardingPage(),
         '/nointernetpage': (context) => const NoInternetPage(),
         '/splashscreenpage': (context) => const SplashScreenPage(),
+        '/noticepage': (context) => const NoticePage(),
       };
 }

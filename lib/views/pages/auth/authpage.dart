@@ -11,36 +11,41 @@ class AuthPage extends StatelessWidget {
         return Scaffold(
           body: Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 30)
-                  .copyWith(top: 60),
+              padding: const EdgeInsets.symmetric(horizontal: 55)
+                  .copyWith(bottom: 40),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Lorem ipsum dolor sit.',
-                        textAlign: TextAlign.center,
-                        style: interheadline1.copyWith(color: davysGrey),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 15),
-                        child: Container(
-                          height: 200,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            color: silver,
-                            borderRadius: BorderRadius.circular(15),
+                  Expanded(
+                    child: SizedBox(
+                      height: double.infinity,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Selamat Datang',
+                            textAlign: TextAlign.center,
+                            style: interheadline1.copyWith(color: davysGrey),
                           ),
-                        ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15),
+                            child: Container(
+                              height: 200,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: silver,
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                            ),
+                          ),
+                          Text(
+                            'Di sini kamu perlu memiliki akun untuk dapat menikmati fitur yang tersedia. Jika kamu belum punya akun, kamu perlu menekan tombol buat akun dibawah !',
+                            textAlign: TextAlign.center,
+                            style: interheadline4.copyWith(color: spanishGray),
+                          ),
+                        ],
                       ),
-                      Text(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor. Duis aliquam ex lacus, et finibus nibh bibendum sodales.',
-                        textAlign: TextAlign.center,
-                        style: interheadline4.copyWith(color: spanishGray),
-                      ),
-                    ],
+                    ),
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -48,47 +53,53 @@ class AuthPage extends StatelessWidget {
                       bigButtonWidget(
                         text: "Buat Akun",
                         onTap: () {
+                          ClickHelper.clickSound();
+
                           Navigator.pushNamed(context, '/registerpage');
                         },
                         width: 200,
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      dividerWidget(),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      circleButtonWidget(
-                        onTap: () {
-                          viewModel.signInUsingGoogle!(context);
-                        },
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      const SizedBox(height: 25),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text(
-                            'Lorem ipsum dolor sit amet,',
-                            textAlign: TextAlign.center,
-                            style: interheadline6.copyWith(color: spanishGray),
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          GestureDetector(
+                          dividerWidget(text: "atau masuk dengan"),
+                          const SizedBox(height: 25),
+                          circleButtonWidget(
                             onTap: () {
-                              Navigator.pushNamed(context, '/loginpage');
+                              ClickHelper.clickSound();
+
+                              viewModel.signInUsingGoogle!(context);
                             },
-                            child: Text(
-                              'Sign In',
-                              textAlign: TextAlign.center,
-                              style:
-                                  interheadline6.copyWith(color: cyanProcess),
-                            ),
-                          )
+                          ),
+                          const SizedBox(height: 25),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'kamu sudah punya akun? kamu bisa',
+                                textAlign: TextAlign.center,
+                                style:
+                                    interheadline6.copyWith(color: spanishGray),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  ClickHelper.clickSound();
+
+                                  Navigator.pushNamed(context, '/loginpage');
+                                },
+                                child: Text(
+                                  'Login',
+                                  textAlign: TextAlign.center,
+                                  style: interheadline6.copyWith(
+                                      color: cyanProcess),
+                                ),
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     ],

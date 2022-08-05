@@ -11,7 +11,7 @@ Widget normalAppbarWidget({String? title}) {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            title ?? "Profile",
+            title ?? "Lorem ipsum",
             style: interheadline3.copyWith(color: davysGrey),
           ),
         ],

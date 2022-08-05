@@ -12,7 +12,7 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              normalAppbarWidget(),
+              normalAppbarWidget(title: "Profil"),
               Expanded(
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height,
@@ -69,6 +69,8 @@ class ProfilePage extends StatelessWidget {
                           child: bigButtonWidget(
                             text: "Keluar",
                             onTap: () {
+                              ClickHelper.clickSound();
+
                               viewModel.logout!(context);
                             },
                             primaryColor: salmon,

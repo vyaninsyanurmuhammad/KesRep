@@ -1,6 +1,10 @@
 part of 'widgets.dart';
 
-Widget materiCardWidget({Color? background, required VoidCallback onTap}) =>
+Widget materiCardWidget(
+        {Color? background,
+        String? judul,
+        String? deskripsi,
+        required VoidCallback onTap}) =>
     GestureDetector(
       child: GestureDetector(
         onTap: onTap,
@@ -28,7 +32,7 @@ Widget materiCardWidget({Color? background, required VoidCallback onTap}) =>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Lorem ipsum dolor sit",
+                      judul ?? "Lorem ipsum dolor sit",
                       style: interheadline4.copyWith(color: davysGrey),
                     ),
                     Padding(
@@ -37,7 +41,8 @@ Widget materiCardWidget({Color? background, required VoidCallback onTap}) =>
                         width: 175,
                         height: 90,
                         child: Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat congue tortor, quis aliquet erat luctus ac. Integer gravida rhoncus ipsum at fermentum. Nam....",
+                          deskripsi ??
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat congue tortor, quis aliquet erat luctus ac. Integer gravida rhoncus ipsum at fermentum. Nam....",
                           style: interheadline7.copyWith(color: spanishGray),
                         ),
                       ),

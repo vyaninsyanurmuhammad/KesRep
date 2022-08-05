@@ -5,6 +5,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 
 import 'package:kesrep/redux/redux.dart';
 import 'package:kesrep/views/views.dart';
+import 'package:rive/rive.dart';
 
 part 'gameappbarwidget.dart';
 part 'medalpointwidget.dart';
@@ -26,3 +27,5 @@ part 'pembahasanappbarwidget.dart';
 part 'dividerwidget.dart';
 part 'authinputwidget.dart';
 part 'modalerrorauthwidget.dart';
+part 'miniscoreboxwidget.dart';
+part 'loadingingamewidget.dart';

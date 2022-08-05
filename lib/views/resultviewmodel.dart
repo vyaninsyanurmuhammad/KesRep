@@ -29,15 +29,30 @@ class ResultViewModel {
 
   factory ResultViewModel.create(Store<AppState> store) {
     _addResultToFirebase() {
-      StageAchieved newStageAchieved = StageAchieved(
-        id: store.state.resultState!.positionStage!.id,
-        level: store.state.resultState!.positionStage!.level,
-        isPlayed: true,
-        medalAchieved: ScoreHelper.scoreDecider(
-          score: store.state.resultState!.result!.toInt(),
-        ),
-        score: store.state.resultState!.result!.toInt(),
-      );
+      StageAchieved newStageAchieved =
+          (store.state.resultState!.stageAchieved!.firstScore == null)
+              ? StageAchieved(
+                  id: store.state.resultState!.positionStage!.id,
+                  level: store.state.resultState!.positionStage!.level,
+                  isPlayed: true,
+                  medalAchieved: ScoreHelper.scoreDecider(
+                    score: store.state.resultState!.result!.toInt(),
+                  ),
+                  score: store.state.resultState!.result!.toInt(),
+                  firstScore: store.state.resultState!.result!.toInt(),
+                )
+              : StageAchieved(
+                  id: store.state.resultState!.positionStage!.id,
+                  level: store.state.resultState!.positionStage!.level,
+                  isPlayed: true,
+                  medalAchieved: ScoreHelper.scoreDecider(
+                    score: store.state.resultState!.result!.toInt(),
+                  ),
+                  score: store.state.resultState!.result!.toInt(),
+                  firstScore: store
+                      .state.resultState!.stageAchieved!.firstScore!
+                      .toInt(),
+                );
 
       double _oldScore = 0.0;
 

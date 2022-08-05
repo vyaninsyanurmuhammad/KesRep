@@ -6,6 +6,7 @@ import 'package:kesrep/helpers/helpers.dart';
 import 'package:kesrep/views/views.dart';
 import 'package:rive/rive.dart';
 import 'package:kesrep/redux/redux.dart';
+import 'package:webview_flutter_plus/webview_flutter_plus.dart';
 
 part 'homepage.dart';
 part 'gamepage.dart';
@@ -19,4 +20,4 @@ part 'materidetailpage.dart';
 part 'onboardingpage.dart';
 part 'nointernetpage.dart';
 part 'splashscreenpage.dart';
-part 'loadingingamepage.dart';
+part 'noticepage.dart';

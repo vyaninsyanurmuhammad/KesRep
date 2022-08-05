@@ -22,13 +22,22 @@ Widget inGameAppbarWidget({
                 children: [
                   GestureDetector(
                     onTap: () {
+                      ClickHelper.clickSound();
+
                       modalCloseGameWidget(
+                        title: "Ingin memastikan saja",
+                        description:
+                            "Apa kamu yakin ingin keluar dari permainan? karena semua pertanyaan yang telah kamu jawab akan hilang",
                         blueButtonText: "Batal",
                         redButtonText: "Yakin!",
                         onTapBlue: () {
+                          ClickHelper.clickSound();
+
                           Navigator.pop(context);
                         },
                         onTapRed: () {
+                          ClickHelper.clickSound();
+
                           Navigator.pushNamedAndRemoveUntil(
                               context, '/homepage', (route) => false);
 
@@ -53,6 +62,8 @@ Widget inGameAppbarWidget({
                   ),
                   GestureDetector(
                     onTap: () {
+                      ClickHelper.clickSound();
+
                       reviewBottomSheetWidget(
                         context: context,
                       );

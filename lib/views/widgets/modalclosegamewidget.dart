@@ -28,14 +28,23 @@ Future modalCloseGameWidget({
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  title ?? 'Lorem ipsum',
-                  style: interheadline3.copyWith(color: davysGrey),
-                ),
-                Text(
-                  description ??
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
-                  style: interheadline6.copyWith(color: spanishGray),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      title ?? 'Lorem ipsum',
+                      style: interheadline3.copyWith(color: davysGrey),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      description ??
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                      textAlign: TextAlign.center,
+                      style: interheadline6.copyWith(color: spanishGray),
+                    ),
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

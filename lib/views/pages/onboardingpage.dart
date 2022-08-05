@@ -54,6 +54,8 @@ class OnBoardingPage extends StatelessWidget {
                       bigButtonWidget(
                         text: "Dimengerti",
                         onTap: () {
+                          ClickHelper.clickSound();
+
                           Navigator.pushNamed(context, '/loadingpage');
                         },
                       )

@@ -10,3 +10,4 @@ part 'resultaction.dart';
 part 'pembahasanaction.dart';
 part 'authaction.dart';
 part 'onboardingaction.dart';
+part 'materiaction.dart';

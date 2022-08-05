@@ -9,5 +9,6 @@ AppState appStateReducer(AppState state, action) {
     pembahasanState: pembahasanReducer(state.pembahasanState, action),
     authState: authReducer(state.authState, action),
     onBoardingState: onBoardingReducer(state.onBoardingState, action),
+    materiState: materiReducer(state.materiState, action),
   );
 }

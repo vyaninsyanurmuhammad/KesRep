@@ -8,6 +8,7 @@ class AppState {
   PembahasanState? pembahasanState;
   AuthState? authState;
   OnBoardingState? onBoardingState;
+  MateriState? materiState;
 
   AppState({
     this.homeState,
@@ -17,6 +18,7 @@ class AppState {
     this.pembahasanState,
     this.authState,
     this.onBoardingState,
+    this.materiState,
   });
 
   AppState.initialState() {
@@ -27,6 +29,7 @@ class AppState {
     pembahasanState = PembahasanState.initialState();
     authState = AuthState.initialState();
     onBoardingState = OnBoardingState.initialState();
+    materiState = MateriState.initialState();
   }
 
   AppState copyWith({
@@ -37,6 +40,7 @@ class AppState {
     PembahasanState? pembahasanState,
     AuthState? authState,
     OnBoardingState? onBoardingState,
+    MateriState? materiState,
   }) {
     return AppState(
       homeState: homeState ?? this.homeState,
@@ -46,6 +50,7 @@ class AppState {
       pembahasanState: pembahasanState ?? this.pembahasanState,
       authState: authState ?? this.authState,
       onBoardingState: onBoardingState ?? this.onBoardingState,
+      materiState: materiState ?? this.materiState,
     );
   }
 }

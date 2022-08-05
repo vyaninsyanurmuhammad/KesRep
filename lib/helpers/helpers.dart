@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -17,3 +18,5 @@ part 'playerhelper.dart';
 part 'scorehelper.dart';
 part 'validatorhelper.dart';
 part 'initialscreenhelper.dart';
+part 'clickhelper.dart';
+part 'characterhelper.dart';

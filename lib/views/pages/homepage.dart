@@ -10,9 +10,7 @@ class HomePage extends StatelessWidget {
         store.dispatch(
             LoadPlayerAction(player: await PlayerHelper.fetchPlayer()));
       },
-      onDispose: (store) {
-        store.state.homeState?.internetconnection?.cancel();
-      },
+      onDispose: (store) {},
       converter: (store) => HomeViewModel.create(store),
       builder: (BuildContext context, HomeViewModel viewModel) {
         return Scaffold(
@@ -93,20 +91,4 @@ class HomePage extends StatelessWidget {
       },
     );
   }
-
-  // _bottomNavigationBarItem(
-  //     {String? label, String? artboard, RiveAnimationController? controller}) {
-  //   return BottomNavigationBarItem(
-  //     icon: SizedBox(
-  //       height: 40,
-  //       width: 40,
-  //       child: RiveAnimation.asset(
-  //         "assets/bottomnavbar.riv",
-  //         artboard: artboard,
-  //         controllers: [controller!],
-  //       ),
-  //     ),
-  //     label: label,
-  //   );
-  // }
 }

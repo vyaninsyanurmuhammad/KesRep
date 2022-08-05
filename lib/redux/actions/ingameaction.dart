@@ -85,9 +85,3 @@ class IsLoadingAction {
 
   IsLoadingAction({this.isLoading});
 }
-
-class IsInGameOfflineAction {
-  final bool? isOffline;
-
-  IsInGameOfflineAction({this.isOffline});
-}
