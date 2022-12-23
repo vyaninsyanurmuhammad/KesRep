@@ -1,0 +1,429 @@
+{
+    "id": "2",
+    "level": "2",
+    "medalRequred": 1,
+    "title": "Kepriaan",
+    "gambar": "assets/materi/kepriaan.png",
+    "quiz": [
+        {
+            "id": "1",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Apa tanda-tanda seks primer pada pria ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tanda-tanda seks primer, yakni berhubungan langsung dengan organ seks seperti menstruasi untuk perempuan dan mimpi basah untuk laki-laki.\n\nSementara tanda-tanda seks sekunder, pada remaja laki-laki terjadi perubahan suara, tumbuhnya jakun, penis dan buah zakar bertambah besar, terjadinya ereksi dan ejakulasi, badan berotot, tumbuhnya kumis, cambang dan rambut di sekitar kemaluan dan ketiak. Pada remaja putri ditandai dengan payudara membesar, pinggul melebar, dan tumbuhnya rambut di ketiak dan sekitar kemaluan."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Mimpi basah"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mensturasi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Pinggul membesar"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tumbuh jakun"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Apa tanda-tanda seks skunder pada pria ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tanda-tanda seks sekunder, pada remaja laki-laki terjadi perubahan suara, tumbuhnya jakun, penis dan buah zakar bertambah besar, terjadinya ereksi dan ejakulasi, badan berotot, tumbuhnya kumis, cambang dan rambut di sekitar kemaluan dan ketiak. Pada remaja putri ditandai dengan payudara membesar, pinggul melebar, dan tumbuhnya rambut di ketiak dan sekitar kemaluan."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Payudara membesar"
+                },
+                {
+                    "isRight": false,
+                    "data": "Pinggul melebar"
+                },
+                {
+                    "isRight": false,
+                    "data": "Haid"
+                },
+                {
+                    "isRight": true,
+                    "data": "Tumbuh jakun"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Bagaimana cara agar pria terhindar dari kanker penis?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Untuk laki-laki sangat dianjurkan untuk disunat/ khitan, agar terhindar dari kanker penis dan kanker leher rahim pada istrinya."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Memakai Sarung"
+                },
+                {
+                    "isRight": true,
+                    "data": "Disunat/ Khitan"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kencing sembarangan"
+                },
+                {
+                    "isRight": false,
+                    "data": "Minum obat setiap saat"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Handuk seperti apa yang dapat menjaga kesehatan reproduksi pria ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Bagi perempuan setelah buang air kecil membersihkan dari arah depan ke belakang agar kuman dari anus tidak ikut ke organ reproduksi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Tidak berbau dan berwarna merah"
+                },
+                {
+                    "isRight": false,
+                    "data": "Bersih, tidak berbau, dan mahal"
+                },
+                {
+                    "isRight": true,
+                    "data": "Bersih, kering, dan tidak lembab"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kering, berwarna hijau, dan lembab"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "tipe": "imageandtext",
+            "gambar": "assets/materi/stageTwo/1.png",
+            "pertanyaan": "Bagian yang ditunjuk oleh huruf K adalah....",
+            "penjelasan": {
+                "gambar": "assets/materi/stageTwo/1.1.png",
+                "deskripsi": "Organ reproduksi pria memiliki struktur eksternal yang meliputi:\n\n1. Penis, berfungsi sebagai jalan keluarnya urine dan sperma.\n\n2. Skrotum (kantong zakar), berfungsi sebagai sistem kontrol suhu pada testis. Suhu pada testis erat kaitannya dalam memproduksi sperma yang sehat.\n\n3. Testis, berfungsi untuk memproduksi sperma dan hormon testosteron (hormon utama pada pria).\n\nSelain itu, pria juga memiliki organ reproduksi internal yang dikenal sebagai organ tambahan. Organ tersebut berfungsi untuk membantu berlangsungnya proses produksi, penyimpanan, dan keluarnya sperma. Organ tersebut, antara lain:\n\n1. Epididimis, berfungsi menyimpan sel sperma yang diproduksi di testis dan mengangkut sperma yang belum matang menuju tabung vas deferens agar menjadi sperma matang.\n\n2. Kelenjar prostat, berkontribusi dalam memberikan cairan tambahan untuk proses ejakulasi. Cairan prostat juga membantu sperma agar tetap sehat.\n\n3. Kelenjar bulbouretral, berperan dalam menghasilkan cairan yang berfungsi untuk melumasi uretra dan menetralisir keasaman yang mungkin ada karena tetesan sisa urine.\n\n4. Vesikula seminalis, berfungsi menghasilkan cairan fruktosa yang digunakan sperma sebagai sumber energi ketika beraktivitas.\n\n5. Duktus ejakulatorius.\n\n6. Uretra, saluran yang membawa urine atau sperma ke luar tubuh.\n\n7. Vas deferens, yaitu tabung yang berfungsi mengangkut sperma matang menuju uretra dalam persiapan untuk ejakulasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Vas Deferens"
+                },
+                {
+                    "isRight": true,
+                    "data": "Testis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kantong urin"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "tipe": "imageandimage",
+            "gambar": "assets/materi/stageTwo/1.png",
+            "pertanyaan": "Penis ditunjuk oleh huruf ....",
+            "penjelasan": {
+                "gambar": "assets/materi/stageTwo/1.1.png",
+                "deskripsi": "Organ reproduksi pria memiliki struktur eksternal yang meliputi:\n\n1. Penis, berfungsi sebagai jalan keluarnya urine dan sperma.\n\n2. Skrotum (kantong zakar), berfungsi sebagai sistem kontrol suhu pada testis. Suhu pada testis erat kaitannya dalam memproduksi sperma yang sehat.\n\n3. Testis, berfungsi untuk memproduksi sperma dan hormon testosteron (hormon utama pada pria).\n\nSelain itu, pria juga memiliki organ reproduksi internal yang dikenal sebagai organ tambahan. Organ tersebut berfungsi untuk membantu berlangsungnya proses produksi, penyimpanan, dan keluarnya sperma. Organ tersebut, antara lain:\n\n1. Epididimis, berfungsi menyimpan sel sperma yang diproduksi di testis dan mengangkut sperma yang belum matang menuju tabung vas deferens agar menjadi sperma matang.\n\n2. Kelenjar prostat, berkontribusi dalam memberikan cairan tambahan untuk proses ejakulasi. Cairan prostat juga membantu sperma agar tetap sehat.\n\n3. Kelenjar bulbouretral, berperan dalam menghasilkan cairan yang berfungsi untuk melumasi uretra dan menetralisir keasaman yang mungkin ada karena tetesan sisa urine.\n\n4. Vesikula seminalis, berfungsi menghasilkan cairan fruktosa yang digunakan sperma sebagai sumber energi ketika beraktivitas.\n\n5. Duktus ejakulatorius.\n\n6. Uretra, saluran yang membawa urine atau sperma ke luar tubuh.\n\n7. Vas deferens, yaitu tabung yang berfungsi mengangkut sperma matang menuju uretra dalam persiapan untuk ejakulasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/1.1.2.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTwo/1.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/1.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih makanan atau minuman yang menjaga kesehatan penis",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Beberapa makanan dinilai bisa membantu menyehatkan penis, antara lain:\n\n1. Pisang kaya yang dapat meningkatkan sirkulasi darah dari jantung ke seluruh tubuh yang dapat membantu penis ereksi yang lebih baik.\n\n2. Bayam yang kaya akan kandungan zat besi yang dapat meningkatkan produksi sel-sel darah yang sehat untuk membantu ereksi.\n\n3. Tomat kaya akan senyawa yang dikenal sebagai lycopene jika dikonsumsi secara teratur dapat membuat penis tetap sehat.\n\n4. Semangka yang kaya senyawa yang dikenal sebagai L-citrulline sehingga dapat membuat penis tetap sehat."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/2.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Anak laki-laki yang telah mengalami pubertas mengalami perubahan suara dan bentuk tubuh. Perubahan ini dipengaruhi oleh hormon ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Seluruh sistem reproduksi pada pria tergantung pada hormon, yaitu zat kimiawi yang mengatur aktivitas sel dan organ pada tubuh. Hormon utama yang terlibat dalam fungsi sistem reproduksi pria meliputi:\n\n1. Hormon gonadotropin, Saat anak laki-laki memasuki masa pubertas, tubuhnya akan memproduksi lebih banyak hormon gonadotropin. Hormon ini dihasilkan oleh kelenjar hipotalamus pada otak.\n\n2. Hormon perangsang folikel, Hormon ini sangat penting agar organ reproduksi pria dapat menghasilkan sperma. Setiap hari produksi sperma yang dihasilkan bisa mencapai 300 juta, dengan masa pembentukan tiap sperma sekitar 65–75 hari.\n\n3. Hormon luteinizing, Saat hormon ini dilepaskan ke dalam darah, akan terjadi produksi dan pelepasan hormon testosteron sebagai hormon utama pada pria.\n\n4. Produksi testosteron pada masa pubertas memicu berbagai perubahan fisik, seperti pembesaran testis dan skrotum, penis yang semakin memanjang, suara yang semakin berat, serta tumbuhnya rambut di sekitar alat kelamin, wajah, dan ketiak."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Testosteron"
+                },
+                {
+                    "isRight": false,
+                    "data": "Progesteron"
+                },
+                {
+                    "isRight": false,
+                    "data": "Adrenalin"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tiroksin"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Proses pembentukan sperma disebut ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Spermatogenesis adalah proses pembentukan benih, dalam hal ini adalah sperma. Semua tahapan spermatogenesis terjadi di dalam testis dan berlangsung terus-menerus selama pria hidup."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Spermatogenesis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Fertilitas"
+                },
+                {
+                    "isRight": false,
+                    "data": "Ovulasi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Oogenesis"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Sperma pada manusia diproduksi di ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageTwo/1.1.png",
+                "deskripsi": "Organ reproduksi pria memiliki struktur eksternal yang meliputi:\n\n1. Penis, berfungsi sebagai jalan keluarnya urine dan sperma.\n\n2. Skrotum (kantong zakar), berfungsi sebagai sistem kontrol suhu pada testis. Suhu pada testis erat kaitannya dalam memproduksi sperma yang sehat.\n\n3. Testis, berfungsi untuk memproduksi sperma dan hormon testosteron (hormon utama pada pria).\n\nSelain itu, pria juga memiliki organ reproduksi internal yang dikenal sebagai organ tambahan. Organ tersebut berfungsi untuk membantu berlangsungnya proses produksi, penyimpanan, dan keluarnya sperma. Organ tersebut, antara lain:\n\n1. Epididimis, berfungsi menyimpan sel sperma yang diproduksi di testis dan mengangkut sperma yang belum matang menuju tabung vas deferens agar menjadi sperma matang.\n\n2. Kelenjar prostat, berkontribusi dalam memberikan cairan tambahan untuk proses ejakulasi. Cairan prostat juga membantu sperma agar tetap sehat.\n\n3. Kelenjar bulbouretral, berperan dalam menghasilkan cairan yang berfungsi untuk melumasi uretra dan menetralisir keasaman yang mungkin ada karena tetesan sisa urine.\n\n4. Vesikula seminalis, berfungsi menghasilkan cairan fruktosa yang digunakan sperma sebagai sumber energi ketika beraktivitas.\n\n5. Duktus ejakulatorius.\n\n6. Uretra, saluran yang membawa urine atau sperma ke luar tubuh.\n\n7. Vas deferens, yaitu tabung yang berfungsi mengangkut sperma matang menuju uretra dalam persiapan untuk ejakulasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Testis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Vas Deferens"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kantong urin"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Ciri sperma yang sehat adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Ciri-ciri sperma yang sehat adalah :\n\n1. Volume Cairan Sperma Cukup.\n\n2. Berwarna Putih Keabuan.\n\n3. Tidak Berbau Amis.\n\n4. Konsistensi Kental."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Berwarna coklat muda"
+                },
+                {
+                    "isRight": false,
+                    "data": "Volume sedikit"
+                },
+                {
+                    "isRight": false,
+                    "data": "Berbau amis"
+                },
+                {
+                    "isRight": true,
+                    "data": "Berwarna putih keabuan"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Di dalam penis terdapat saluran yang disebut uretra. Saluran ini berfungsi untuk ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageTwo/1.1.png",
+                "deskripsi": "Organ reproduksi pria memiliki struktur eksternal yang meliputi:\n\n1. Penis, berfungsi sebagai jalan keluarnya urine dan sperma.\n\n2. Skrotum (kantong zakar), berfungsi sebagai sistem kontrol suhu pada testis. Suhu pada testis erat kaitannya dalam memproduksi sperma yang sehat.\n\n3. Testis, berfungsi untuk memproduksi sperma dan hormon testosteron (hormon utama pada pria).\n\nSelain itu, pria juga memiliki organ reproduksi internal yang dikenal sebagai organ tambahan. Organ tersebut berfungsi untuk membantu berlangsungnya proses produksi, penyimpanan, dan keluarnya sperma. Organ tersebut, antara lain:\n\n1. Epididimis, berfungsi menyimpan sel sperma yang diproduksi di testis dan mengangkut sperma yang belum matang menuju tabung vas deferens agar menjadi sperma matang.\n\n2. Kelenjar prostat, berkontribusi dalam memberikan cairan tambahan untuk proses ejakulasi. Cairan prostat juga membantu sperma agar tetap sehat.\n\n3. Kelenjar bulbouretral, berperan dalam menghasilkan cairan yang berfungsi untuk melumasi uretra dan menetralisir keasaman yang mungkin ada karena tetesan sisa urine.\n\n4. Vesikula seminalis, berfungsi menghasilkan cairan fruktosa yang digunakan sperma sebagai sumber energi ketika beraktivitas.\n\n5. Duktus ejakulatorius.\n\n6. Uretra, saluran yang membawa urine atau sperma ke luar tubuh.\n\n7. Vas deferens, yaitu tabung yang berfungsi mengangkut sperma matang menuju uretra dalam persiapan untuk ejakulasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Saluran sperma dan urine"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penghasil sperma dan hormon"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penghasil sperma dan urine"
+                },
+                {
+                    "isRight": false,
+                    "data": "Saluran sperma dari testis ke kantong sperma"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih dampak negatif jika keseringan melakukan onani atau manstrubasi",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Bahaya onani jika dilakukan secara berlebih pada pria antara lain :\n\n1. Menimbulkan perasaan bersalah.\n\n2. Menimbulkan kecanduan.\n\n3. Dapat mencederai penis.\n\n4. Kehidupan seksual yang terganggu."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Menambah stamina"
+                },
+                {
+                    "isRight": true,
+                    "data": "Dapat mencederai penis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Meningkatan sensitivitas seksual"
+                },
+                {
+                    "isRight": false,
+                    "data": "Melatih ketangkasan"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Sperma yang matang disimpan di dalam ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageTwo/1.1.png",
+                "deskripsi": "Organ reproduksi pria memiliki struktur eksternal yang meliputi:\n\n1. Penis, berfungsi sebagai jalan keluarnya urine dan sperma.\n\n2. Skrotum (kantong zakar), berfungsi sebagai sistem kontrol suhu pada testis. Suhu pada testis erat kaitannya dalam memproduksi sperma yang sehat.\n\n3. Testis, berfungsi untuk memproduksi sperma dan hormon testosteron (hormon utama pada pria).\n\nSelain itu, pria juga memiliki organ reproduksi internal yang dikenal sebagai organ tambahan. Organ tersebut berfungsi untuk membantu berlangsungnya proses produksi, penyimpanan, dan keluarnya sperma. Organ tersebut, antara lain:\n\n1. Epididimis, berfungsi menyimpan sel sperma yang diproduksi di testis dan mengangkut sperma yang belum matang menuju tabung vas deferens agar menjadi sperma matang.\n\n2. Kelenjar prostat, berkontribusi dalam memberikan cairan tambahan untuk proses ejakulasi. Cairan prostat juga membantu sperma agar tetap sehat.\n\n3. Kelenjar bulbouretral, berperan dalam menghasilkan cairan yang berfungsi untuk melumasi uretra dan menetralisir keasaman yang mungkin ada karena tetesan sisa urine.\n\n4. Vesikula seminalis, berfungsi menghasilkan cairan fruktosa yang digunakan sperma sebagai sumber energi ketika beraktivitas.\n\n5. Duktus ejakulatorius.\n\n6. Uretra, saluran yang membawa urine atau sperma ke luar tubuh.\n\n7. Vas deferens, yaitu tabung yang berfungsi mengangkut sperma matang menuju uretra dalam persiapan untuk ejakulasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Uretra"
+                },
+                {
+                    "isRight": false,
+                    "data": "Ureter"
+                },
+                {
+                    "isRight": true,
+                    "data": "Epididimis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Vas deferens"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Secara garis besar, kualitas terbaik bisa didapatkan pada rentang masa subur, yaitu antara ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Masa subur pria berbeda dengan wanita yang mempunyai jendela kesuburan. Secara garis besar, kualitas terbaik bisa didapatkan pada rentang masa subur, yaitu antara 25-40 tahun."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/15.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/15.1.2.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTwo/15.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTwo/15.1.4.png"
+                }
+            ]
+        }
+    ]
+}

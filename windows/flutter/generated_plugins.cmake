@@ -5,6 +5,7 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   audioplayers_windows
   connectivity_plus_windows
+  flutter_tts
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

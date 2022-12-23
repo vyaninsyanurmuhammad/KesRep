@@ -1,0 +1,429 @@
+{
+    "id": "4",
+    "level": "4",
+    "medalRequred": 3,
+    "title": "Kehamilan",
+    "gambar": "assets/materi/kehamilan.png",
+    "quiz": [
+        {
+            "id": "1",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih makanan yang sebaiknya dikonsumsi saat hamil.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Berikut adalah makanan sehat yang direkomendasikan untuk ibu hamil.\n\n1. Daging tanpa lemak (sapi dan ayam) adalah sumber protein berkualitas tinggi yang sangat baik. Daging sapi kaya akan zat besi, kolin, dan vitamin B, yang akan dibutuhkan dalam jumlah yang lebih tinggi selama kehamilan. \n\n2. Ikan yang mana memiliki kandungan protein dan asam lemak omega 3 dalam ikan laut dapat membantu pembentukan dan perkembangan otak janin.\n\n3. Buah dan Sayuran, Makanan dengan kandungan vitamin C baik untuk dikonsumsi pada trimester pertama. Ini karena vitamin C dapat menambah kekebalan tubuh dan gangguan infeksi. Selain itu, sangat penting juga mengonsumsi makanan yang mengandung zat besi agar terhindar dari anemia.\n\n4. Kacang-kacangan adalah sumber protein  yang baik. Tak hanya itu, ia juga menjadi sumber zat besi, folat, kalium, dan magnesium yang sangat baik dan penting bagi ibu hamil."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/2.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih olahraga yang dianjurkan dan baik dilakukan selama hamil.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Berenang saat hamil bisa membuat badan menjadi sehat dan lebih bugar; Sepeda Statis bermanfaat untuk menjaga berat badan selama masa kehamilan; berjalan kaki bermanfaat untuk memperkuat otot kaki; Yoga dapat membuat tubuh menjadi lebih rileks dan nyaman."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Voli "
+                },
+                {
+                    "isRight": false,
+                    "data": "Sepak bola"
+                },
+                {
+                    "isRight": false,
+                    "data": "Basket"
+                },
+                {
+                    "isRight": true,
+                    "data": "Berenag"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih gambar yang menunjukan tahap bukaan 1 pada saat melahirkan.",
+            "penjelasan": {
+                "gambar": "assets/materi/stageFour/3.1.2.png",
+                "deskripsi": "Tahap bukaan 1 adalah tahap awal proses persalinan. Biasanya berlangsung beberapa hari, tanpa kontraksi. Meski begitu pada sebagian ibu, kontraksi ini bisa berlangsung 2-6 jam, dengan kontraksi pula."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/3.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageFour/3.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/3.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/3.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "tipe": "imageandimage",
+            "gambar": "assets/materi/stageFour/4.png",
+            "pertanyaan": "Dari gambar disamping ini menunjukan bukaan …",
+            "penjelasan": {
+                "gambar": "assets/materi/stageFour/4.png",
+                "deskripsi": "Pada gambar ini mulut rahim telah membuka sebesar 7 cm. Adapun yang dirasakan ibu saat itu, kontraksi makin sering dan kuat. Bisa 2-3 menit sekali dengan lama 1-1,5 menit."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/4.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/4.1.2.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageFour/4.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/4.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih posisi tidur yang dianjurkan bagi ibu hamil.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Posisi tidur yang dianjurkan untuk ibu hamil adalah miring ke kiri. Posisi ini disarankan karena dapat meningkatkan aliran darah ke plasenta, sehingga janin akan memperoleh aliran darah dengan optimal. Namun, jika belum terbiasa atau merasa kurang nyaman dengan posisi tidur menyamping ke sisi kiri, Bumil bisa sesekali mengubah posisi miring ke kanan untuk mengurangi tekanan pada pinggul kiri."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Tengkurap"
+                },
+                {
+                    "isRight": true,
+                    "data": "Miring ke kiri"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tidak tidur"
+                },
+                {
+                    "isRight": false,
+                    "data": "Duduk "
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "tipe": "textandtext",
+            "gambar": "assets/materi/stageOne/1.png",
+            "pertanyaan": "Pilihlah cara merawat organ reproduksi wanita pasca melahirkan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Membersihkan organ reproduksi wanita dengan air hangat dan sebaiknya tidak menggunakan sabun atau cairan tertentu selain yang direkomendasikan oleh bidan/dokter; Setelah organ reproduksi dijahit, usahakan mengatur posisi duduk diatas kursi dengan kaki tidak menggantung; ika ingin buang air kecil, usahakan menggunakan kloset duduk dan tidak dalam posisi jongkok dalam waktu minimal 1 minggu sebelum jahitan kering; Gunakan celana dalam berbahan katun yang longgar untuk menghindari gesekan atau tekanan berlebihan."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Meminum minuman bersoda"
+                },
+                {
+                    "isRight": true,
+                    "data": "Mencuci dengan menggunakan air hangat"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menggaruk ketika gatal"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menggunakan celana yang ketat"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih makanan yang baik dikonsumsi setelah melahirkan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Ibu yang baru melahirkan membutuhkan asupan nutrisi dan energi yang cukup. Hal ini penting untuk menambah energi agar bisa merawat dan menyusui bayi dengan optimal, serta mendukung proses pemulihan luka setelah melahirkan; Meski sedang menjalani masa pemulihan, bukan berarti Bunda harus terus-terusan berada di tempat tidur."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Makanan pedas"
+                },
+                {
+                    "isRight": true,
+                    "data": "Mekanan kaya akan nutrisi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Makanan berlemak"
+                },
+                {
+                    "isRight": false,
+                    "data": "Makanan snack"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "tipe": "imageandimage",
+            "gambar": "assets/materi/stageFour/8.png",
+            "pertanyaan": "Pilih warna darah haid yang kurang estrogen dan tanda ovulasi",
+            "penjelasan": {
+                "gambar": "assets/materi/stageFour/8.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.3.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/1.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "tipe": "imageandimage",
+            "gambar": "assets/materi/stageFour/8.png",
+            "pertanyaan": "Pada hari keberapa tebentuknya blaktokista awal ?",
+            "penjelasan": {
+                "gambar": "assets/materi/stageFour/8.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/9.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageFour/9.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/9.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageFour/9.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "tipe": "imageandtext",
+            "gambar": "assets/materi/stageFour/8.png",
+            "pertanyaan": "Apa yang sedang terjadi pada proses kehamilan hari ke 8-9 ?",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/3.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Terbentuknya zigot"
+                },
+                {
+                    "isRight": false,
+                    "data": "Pembelahan sel menjadi 16"
+                },
+                {
+                    "isRight": true,
+                    "data": "Embrio memulai implantasi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Biastokista tahap akhir"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih salah satu tanda bahwa proses kehamilan berjalan lancer di trisemester 1.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Trimester pertama dimulai pada hari pertama menstruasi terakhir Bunda dan berlangsung hingga akhir minggu ke-13. Ciri kehamilan fase ini berjalan lancar antara lain:\n\n1. Bunda cepat merasa Lelah.\n\n2. Payudara membesar dan terasa sakit.\n\n3. Sembelit.\n\n4. Mual di pagi hari.\n\n5. Sakit kepala.\n\n6. Enggak doyan makanan kesukaan.\n\n7. Berat badan bertambah.\n\n8. Keputihan.\n\n9. Sering buang air kecil."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Ngidam setiap saat"
+                },
+                {
+                    "isRight": false,
+                    "data": "Sering mengalami flu"
+                },
+                {
+                    "isRight": false,
+                    "data": "Badan terasa gatal"
+                },
+                {
+                    "isRight": true,
+                    "data": "Cepat merasa Lelah"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih salah satu cara perawatan nyeri pada vagina setelah melahirkan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Berikut cara perawatan nyeri pada vagina setelah melahirkan :\n\n1. Dinginkan bagian nyeri dengan kompres dingin\n\n2. Hindari duduk di kursi yang keras, sebaiknya alasi tempat duduk dengan bantal\n\n3. Bersihkan bagian vagina dari arah depan ke belakang setelah buang air kecil dan buang air besar\n\n4. Minum obat pereda nyeri atas saran dokter"
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Dinginkan bagian nyeri dengan kompres dingin"
+                },
+                {
+                    "isRight": false,
+                    "data": "Muduk di kursi yang keras"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mengolesi dengan salep"
+                },
+                {
+                    "isRight": false,
+                    "data": "Membiarkannya begitu saja"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih salah satu cara perawatan kontraksi setelah melahirkan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Kontraksi pasca melahirkan merupakan hal yang alami terjadi . Tujuannya untuk mengembalikan kondisi/ukuran rahim ke ukuran normal. Saat menyusui (karena adanya pelepasan hormon oksitoksin) juga dapat membantu ukuran rahim menjadi kembali seperti semula. Jika kontraksi dirasa terlalu sakit, sebaiknya kontrol ke dokter , dokter akan memberikan obat pereda nyeri."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Menggunakan pakaian ketat"
+                },
+                {
+                    "isRight": false,
+                    "data": "Meminum minuman bersoda"
+                },
+                {
+                    "isRight": true,
+                    "data": "Minum obat pereda nyeri atas saran dokter"
+                },
+                {
+                    "isRight": false,
+                    "data": "Minum minuman beralkohol"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Bagaimana cara membantu mengencangkan kembali otot-otot di dasar panggul setelah melahirkan?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Untuk mengencangkan kembali otot-otot yang kendur pasca melahirkan yaitu dengan cara seperti berolahraga senam kegel yang bisa dipraktikkan dirumah."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Melakukan senam kegel"
+                },
+                {
+                    "isRight": false,
+                    "data": "Berolahraga voli"
+                },
+                {
+                    "isRight": false,
+                    "data": "Melakukan push-up"
+                },
+                {
+                    "isRight": false,
+                    "data": "Olahraga angkat beban"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Setelah melahirkan, vagina akan merasa nyeri dan bengkak, pilihlah cara untuk mengatasi ini !",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Sesaat setelah melahirkan, vagina Bunda mungkin akan terasa nyeri dan bengkak. Untuk mengatasi kondisi ini, Bunda bisa mengompres dingin area vagina. Caranya, balutlah es batu dengan kain, lalu tempelkan ke area vagina selama 15–20 menit. Selain itu, gunakan bantalan ketika hendak duduk."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Dibiarkan sendiri"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mengoleskan salep"
+                },
+                {
+                    "isRight": false,
+                    "data": "Berendam didalam air"
+                },
+                {
+                    "isRight": true,
+                    "data": "Mengkompres dengan es batu"
+                }
+            ]
+        }
+    ]
+}

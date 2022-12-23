@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:kesrep/helpers/helpers.dart';
+import 'package:kesrep/models/models.dart';
 import 'package:kesrep/views/views.dart';
 import 'package:rive/rive.dart';
 import 'package:kesrep/redux/redux.dart';

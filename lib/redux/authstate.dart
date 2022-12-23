@@ -5,6 +5,7 @@ class AuthState {
   String? email;
   String? password;
   bool? isOffline;
+  bool? isLoading;
   StreamSubscription? internetconnection;
 
   FirebaseAuth? currentUser;
@@ -14,6 +15,7 @@ class AuthState {
     this.email,
     this.password,
     this.isOffline,
+    this.isLoading,
   });
 
   AuthState.initialState() {
@@ -22,6 +24,7 @@ class AuthState {
     password = '';
 
     isOffline = true;
+    isLoading = false;
 
     internetconnection = Connectivity()
         .onConnectivityChanged
@@ -45,12 +48,14 @@ class AuthState {
     String? email,
     String? password,
     bool? isOffline,
+    bool? isLoading,
   }) {
     return AuthState(
       name: name ?? this.name,
       email: email ?? this.email,
       password: password ?? this.password,
       isOffline: isOffline ?? this.isOffline,
+      isLoading: isLoading ?? this.isLoading,
     );
   }
 }

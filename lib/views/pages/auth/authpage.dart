@@ -32,8 +32,11 @@ class AuthPage extends StatelessWidget {
                             child: Container(
                               height: 200,
                               width: 200,
+                              child: Image.asset(
+                                "assets/logo.png",
+                                fit: BoxFit.fill,
+                              ),
                               decoration: BoxDecoration(
-                                color: silver,
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),

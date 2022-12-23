@@ -85,3 +85,10 @@ class IsLoadingAction {
 
   IsLoadingAction({this.isLoading});
 }
+
+class IsImageOpenAction {
+  final String? imageOpen;
+  final bool? isImageOpen;
+
+  IsImageOpenAction({this.imageOpen, this.isImageOpen});
+}

@@ -6,9 +6,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StoreConnector<AppState, HomeViewModel>(
-      onInit: (store) async {
-        store.dispatch(
-            LoadPlayerAction(player: await PlayerHelper.fetchPlayer()));
+      onInit: (store) {
+        store.dispatch(GetPlayerAction());
+        store.dispatch(GetGameAction());
       },
       onDispose: (store) {},
       converter: (store) => HomeViewModel.create(store),
@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                 children: const [
                   GamePage(),
                   ProfilePage(),
-                  MateriPage(),
+                  // MateriPage(),
                 ],
               ),
               Container(
@@ -46,40 +46,76 @@ class HomePage extends StatelessWidget {
                     elevation: 0,
                     items: [
                       BottomNavigationBarItem(
-                        icon: SizedBox(
-                          height: 40,
-                          width: 40,
-                          child: RiveAnimation.asset(
-                            "assets/bottomnavbar.riv",
-                            artboard: "Home",
-                            controllers: [viewModel.homeIconController!],
-                          ),
+                        icon: Column(
+                          children: [
+                            SizedBox(
+                              height: 40,
+                              width: 40,
+                              child: RiveAnimation.asset(
+                                "assets/bottomnavbar.riv",
+                                artboard: "Home",
+                                controllers: [viewModel.homeIconController!],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 2,
+                            ),
+                            (viewModel.indexBottomNavbar == 0)
+                                ? Container(
+                                    height: 6,
+                                    width: 6,
+                                    decoration: BoxDecoration(
+                                        color: illuminatingEmerald,
+                                        borderRadius:
+                                            BorderRadius.circular(15)),
+                                  )
+                                : Container(
+                                    height: 6,
+                                    width: 6,
+                                    decoration: BoxDecoration(
+                                        color: Colors.transparent,
+                                        borderRadius:
+                                            BorderRadius.circular(15)),
+                                  ),
+                          ],
                         ),
                         label: "Home",
                       ),
                       BottomNavigationBarItem(
-                        icon: SizedBox(
-                          height: 40,
-                          width: 40,
-                          child: RiveAnimation.asset(
-                            "assets/bottomnavbar.riv",
-                            artboard: "Profil",
-                            controllers: [viewModel.profilIconController!],
-                          ),
+                        icon: Column(
+                          children: [
+                            SizedBox(
+                              height: 40,
+                              width: 40,
+                              child: RiveAnimation.asset(
+                                "assets/bottomnavbar.riv",
+                                artboard: "Profil",
+                                controllers: [viewModel.profilIconController!],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 2,
+                            ),
+                            (viewModel.indexBottomNavbar != 0)
+                                ? Container(
+                                    height: 6,
+                                    width: 6,
+                                    decoration: BoxDecoration(
+                                        color: illuminatingEmerald,
+                                        borderRadius:
+                                            BorderRadius.circular(15)),
+                                  )
+                                : Container(
+                                    height: 6,
+                                    width: 6,
+                                    decoration: BoxDecoration(
+                                        color: Colors.transparent,
+                                        borderRadius:
+                                            BorderRadius.circular(15)),
+                                  ),
+                          ],
                         ),
                         label: "Profil",
-                      ),
-                      BottomNavigationBarItem(
-                        icon: SizedBox(
-                          height: 40,
-                          width: 40,
-                          child: RiveAnimation.asset(
-                            "assets/bottomnavbar.riv",
-                            artboard: "Materi",
-                            controllers: [viewModel.materiIconController!],
-                          ),
-                        ),
-                        label: "Materi",
                       ),
                     ],
                   ),

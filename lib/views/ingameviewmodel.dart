@@ -14,9 +14,12 @@ class InGameViewModel {
   final bool? isPlayingSound;
 
   final bool? isLoading;
+  final bool? isImageOpen;
+  final String? imageOpen;
 
   final RiveAnimationController? characterController;
 
+  void Function(String)? openImage;
   void Function()? nextQuiz;
   void Function()? backQuiz;
   void Function(int)? chooseQuiz;
@@ -50,6 +53,9 @@ class InGameViewModel {
     this.playSound,
     this.isLoading,
     this.characterController,
+    this.isImageOpen,
+    this.imageOpen,
+    this.openImage,
   });
 
   factory InGameViewModel.create(Store<AppState> store) {
@@ -205,32 +211,67 @@ class InGameViewModel {
       return _total;
     }
 
+    // _playSound(String sound) async {
+    //   bool? _isPlayingSound = store.state.ingameState?.isPlayingSound;
+    //   store.dispatch(IsPlayingSoundAction(isPlayingSound: true));
+
+    //   AudioPlayer _audioPlayer = AudioPlayer();
+    //   // audioCache.play("sounds/1.mp3");
+
+    //   String _url = await PlayerHelper.getSoundUrl(
+    //     position: store.state.ingameState!.positionStage!.id!,
+    //     name: sound,
+    //   );
+
+    //   await _audioPlayer.setVolume(1);
+
+    //   if (!_isPlayingSound!) {
+    //     // _audioPlayer.setSourceUrl(_url);
+
+    //     await _audioPlayer.play(UrlSource(_url));
+
+    //     _audioPlayer.onPlayerComplete.listen((event) {
+    //       store.dispatch(IsPlayingSoundAction(isPlayingSound: false));
+    //     });
+    //   } else {
+    //     _audioPlayer.pause();
+    //     store.dispatch(IsPlayingSoundAction(isPlayingSound: false));
+    //   }
+    // }
+
     _playSound(String sound) async {
+      FlutterTts flutterTts = FlutterTts();
+
       bool? _isPlayingSound = store.state.ingameState?.isPlayingSound;
       store.dispatch(IsPlayingSoundAction(isPlayingSound: true));
 
-      AudioPlayer _audioPlayer = AudioPlayer();
-      // audioCache.play("sounds/1.mp3");
-
-      String _url = await PlayerHelper.getSoundUrl(
-        position: store.state.ingameState!.positionStage!.id!,
-        name: sound,
-      );
-
-      await _audioPlayer.setVolume(1);
+      // GameHelper.playSpeech(text: sound);
+      await flutterTts.getVoices;
+      List lang = List<String>.from(await flutterTts.getLanguages);
+      print(lang);
+      await flutterTts.setLanguage("id-ID");
+      await flutterTts.setSpeechRate(0.5);
+      await flutterTts.setPitch(1);
+      // await flutterTts.setVoice({"name": "uk-UA-language", "locale": "uk-UA"});
 
       if (!_isPlayingSound!) {
         // _audioPlayer.setSourceUrl(_url);
 
-        await _audioPlayer.play(UrlSource(_url));
+        await flutterTts.speak(sound);
+        print("complete");
 
-        _audioPlayer.onPlayerComplete.listen((event) {
+        flutterTts.setCompletionHandler(() {
+          print("complete");
           store.dispatch(IsPlayingSoundAction(isPlayingSound: false));
         });
       } else {
-        _audioPlayer.pause();
+        flutterTts.stop();
         store.dispatch(IsPlayingSoundAction(isPlayingSound: false));
       }
+    }
+
+    _openImage(String image) {
+      store.dispatch(IsImageOpenAction(imageOpen: image, isImageOpen: true));
     }
 
     return InGameViewModel(
@@ -255,6 +296,9 @@ class InGameViewModel {
       playSound: _playSound,
       isLoading: store.state.ingameState?.isLoading,
       characterController: _characterController,
+      isImageOpen: store.state.ingameState?.isImageOpen,
+      imageOpen: store.state.ingameState?.imageOpen,
+      openImage: _openImage,
     );
   }
 }

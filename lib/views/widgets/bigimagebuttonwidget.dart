@@ -67,30 +67,19 @@ class BigImageButton3DState extends State<BigImageButton3D> {
           padding: const EdgeInsets.all(5),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
-            child: Image.network(
-                widget.image ??
-                    'https://sdnsusukan07.sch.id/asset/images/noimage.jpg',
-                loadingBuilder: (context, widget, loadingProgress) =>
-                    (loadingProgress == null)
-                        ? widget
-                        : const SizedBox(
-                            child: Center(
-                              child: CircularProgressIndicator(),
-                            ),
-                          ),
+            child: Image.asset(widget.image ?? 'assets/materi/risiko.jpg',
                 errorBuilder: (context, exception, stackTrace) {
-                  return SizedBox(
-                    width: 180,
-                    height: 120,
-                    child: Center(
-                      child: Text(
-                        "Image Error",
-                        style: interheadline3.copyWith(color: davysGrey),
-                      ),
-                    ),
-                  );
-                },
-                fit: BoxFit.fill),
+              return SizedBox(
+                width: 180,
+                height: 120,
+                child: Center(
+                  child: Text(
+                    "Image Error",
+                    style: interheadline3.copyWith(color: davysGrey),
+                  ),
+                ),
+              );
+            }, fit: BoxFit.fill),
           ),
         ),
       ),

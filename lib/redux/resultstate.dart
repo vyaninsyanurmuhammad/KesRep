@@ -11,6 +11,7 @@ class ResultState {
   Unit? positionUnit;
   Stage? positionStage;
   bool? isLoading;
+  bool? isAnimationDone;
 
   ResultState({
     this.result,
@@ -21,6 +22,7 @@ class ResultState {
     this.positionUnit,
     this.positionStage,
     this.isLoading,
+    this.isAnimationDone,
   });
 
   ResultState.initialState() {

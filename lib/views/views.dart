@@ -5,6 +5,7 @@ export 'questions/questions.dart';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:kesrep/helpers/helpers.dart';
 import 'package:redux/redux.dart';
 import 'package:kesrep/models/models.dart';

@@ -46,11 +46,11 @@ class GameViewModel {
         _trueliststageAcived.addAll(_unitAchieved[i].stageAchieved!);
       }
 
-      // unlock stage jika score terakhir > 75 % dan jumlah medal yang dibutuhkan cukup
+      // unlock stage jika score terbaik >= 70 % dan jumlah medal yang dibutuhkan cukup
       for (var i = 0; i < _stage.length; i++) {
-        if (_laststageAcived.score != null) {
+        if (_laststageAcived.scores?.last != null) {
           if (_trueliststageAcived.length == _stage[i].medalRequred! &&
-              _laststageAcived.score! >= 70) {
+              _laststageAcived.scores!.last >= 70) {
             _isLocked = false;
           }
         } else {

@@ -5,3 +5,9 @@ class LoadInitialScreenAction {
 
   LoadInitialScreenAction({this.initialScreen});
 }
+
+class IsLoadingOnBoardingAction {
+  final bool? isLoading;
+
+  IsLoadingOnBoardingAction({this.isLoading});
+}

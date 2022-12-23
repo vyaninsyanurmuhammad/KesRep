@@ -13,6 +13,9 @@ class InGameState {
 
   bool? isPlayingSound;
   bool? isLoading;
+  bool? isImageOpen;
+
+  String? imageOpen;
 
   RiveAnimationController? characterController;
 
@@ -27,6 +30,8 @@ class InGameState {
     this.positionStage,
     this.isPlayingSound,
     this.isLoading,
+    this.isImageOpen,
+    this.imageOpen,
     this.characterController,
   });
 
@@ -45,6 +50,9 @@ class InGameState {
     isPlayingSound = false;
 
     isLoading = true;
+    isImageOpen = false;
+
+    imageOpen = null;
 
     characterController = OneShotAnimation('idle', autoplay: true);
   }
@@ -60,6 +68,8 @@ class InGameState {
     Stage? positionStage,
     bool? isPlayingSound,
     bool? isLoading,
+    bool? isImageOpen,
+    String? imageOpen,
     RiveAnimationController? characterController,
   }) {
     return InGameState(
@@ -73,6 +83,8 @@ class InGameState {
       positionUnit: positionUnit ?? this.positionUnit,
       isPlayingSound: isPlayingSound ?? this.isPlayingSound,
       isLoading: isLoading ?? this.isLoading,
+      isImageOpen: isImageOpen ?? this.isImageOpen,
+      imageOpen: imageOpen ?? this.imageOpen,
       characterController: characterController ?? this.characterController,
     );
   }

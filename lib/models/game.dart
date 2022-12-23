@@ -57,15 +57,23 @@ class Stage {
   String? level;
   int? medalRequred;
   String? title;
+  String? gambar;
   List<Quiz>? quiz;
 
-  Stage({this.id, this.level, this.medalRequred, this.title, this.quiz});
+  Stage(
+      {this.id,
+      this.level,
+      this.medalRequred,
+      this.title,
+      this.gambar,
+      this.quiz});
 
   Stage.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     level = json['level'];
     medalRequred = json['medalRequred'];
     title = json['title'];
+    gambar = json['gambar'];
     if (json['quiz'] != null) {
       quiz = <Quiz>[];
       json['quiz'].forEach((v) {
@@ -80,6 +88,7 @@ class Stage {
     data['level'] = level;
     data['medalRequred'] = medalRequred;
     data['title'] = title;
+    data['gambar'] = gambar;
     if (quiz != null) {
       data['quiz'] = quiz!.map((v) => v.toJson()).toList();
     }
@@ -92,7 +101,6 @@ class Quiz {
   String? tipe;
   String? gambar;
   String? pertanyaan;
-  String? sound;
   Penjelasan? penjelasan;
   List<Pilihan>? pilihan;
 
@@ -101,7 +109,6 @@ class Quiz {
       this.tipe,
       this.gambar,
       this.pertanyaan,
-      this.sound,
       this.penjelasan,
       this.pilihan});
 
@@ -110,7 +117,6 @@ class Quiz {
     tipe = json['tipe'];
     gambar = json['gambar'];
     pertanyaan = json['pertanyaan'];
-    sound = json['sound'];
     penjelasan = json['penjelasan'] != null
         ? Penjelasan.fromJson(json['penjelasan'])
         : null;
@@ -128,7 +134,6 @@ class Quiz {
     data['tipe'] = tipe;
     data['gambar'] = gambar;
     data['pertanyaan'] = pertanyaan;
-    data['sound'] = sound;
     if (penjelasan != null) {
       data['penjelasan'] = penjelasan!.toJson();
     }

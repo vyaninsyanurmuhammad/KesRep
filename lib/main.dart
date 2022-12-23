@@ -33,9 +33,7 @@ class MyApp extends StatelessWidget {
           },
         ),
         routes: AppRoutes.getPages(),
-        initialRoute: store.state.onBoardingState?.initialScreen == null
-            ? '/onboardingpage'
-            : '/splashscreenpage',
+        initialRoute: '/splashscreenpage',
       ),
     );
   }

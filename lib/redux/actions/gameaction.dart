@@ -6,6 +6,12 @@ class LoadGameAction {
   LoadGameAction({this.game});
 }
 
+class GetPlayerAction {}
+
+class GetGameAction {}
+
+class ClearGameAction {}
+
 class LoadPlayerAction {
   Player? player;
 

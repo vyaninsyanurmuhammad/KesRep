@@ -37,18 +37,17 @@ Widget textTextQuestion({
                   color: lightMint,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Stack(
-                  alignment: Alignment.bottomRight,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Text(
-                          quiz?.pertanyaan ??
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
-                          style: interheadline7.copyWith(
-                            color: spanishGray,
-                          ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(top: 20, left: 20, right: 20),
+                      child: Text(
+                        quiz!.pertanyaan ??
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                        style: interheadline7.copyWith(
+                          color: spanishGray,
                         ),
                       ),
                     ),
@@ -64,7 +63,7 @@ Widget textTextQuestion({
                             onPressed: () {
                               ClickHelper.clickSound();
 
-                              viewModel.playSound!(quiz!.sound!);
+                              viewModel.playSound!(quiz.pertanyaan!);
                             },
                             icon: Icon(
                               Icons.volume_up_rounded,
@@ -83,7 +82,7 @@ Widget textTextQuestion({
         child: Wrap(
           spacing: 25,
           runSpacing: 25,
-          children: quiz!.pilihan!
+          children: quiz.pilihan!
               .map(
                 (e) => bigButtonWidget(
                   text: e.data,

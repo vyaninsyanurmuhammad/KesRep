@@ -89,6 +89,7 @@ class GamePage extends StatelessWidget {
                                             vertical: 13, horizontal: 20),
                                         child: gameButtonWidget(
                                           text: e.value.title,
+                                          image: e.value.gambar,
                                           isLocked: viewmodel
                                               .isLockedStage!(e.value.id!),
                                           isPlayed: viewmodel
@@ -102,10 +103,12 @@ class GamePage extends StatelessWidget {
                                             modalPlayGameWidget(
                                               context: context,
                                               title: e.value.title,
-                                              score: viewmodel
-                                                  .whichStageAchived!
-                                                      (e.value.id!)
-                                                  .score,
+                                              score: ScoreHelper.bestScore(
+                                                      scores: viewmodel
+                                                          .whichStageAchived!
+                                                              (e.value.id!)
+                                                          .scores)
+                                                  ?.toInt(),
                                               medal: viewmodel
                                                   .whichStageAchived!
                                                       (e.value.id!)

@@ -4,6 +4,7 @@ Widget gameButtonWidget({
   bool? isPlayed = false,
   bool? isLocked = true,
   String? text,
+  String? image,
   String? medal,
   required VoidCallback onTap,
 }) =>
@@ -21,6 +22,21 @@ Widget gameButtonWidget({
                   borderRadius: BorderRadius.circular(50),
                   color: lightCyan,
                 ),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: (isLocked != true)
+                    ? Image.asset(
+                        image ?? "assets/materi/1.png",
+                        width: 50,
+                        height: 50,
+                      )
+                    : const SizedBox(),
               ),
               (isPlayed == true)
                   ? Positioned(

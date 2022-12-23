@@ -1,7 +1,7 @@
 part of 'widgets.dart';
 
 Widget bigButtonWidget({
-  String? text,
+  String? text = 'Lorem ipsum',
   double? width = 300,
   double? height = 45,
   Color? primaryColor,
@@ -72,10 +72,15 @@ class Button3DState extends State<Button3D> {
           borderRadius: BorderRadius.circular(30),
         ),
         child: Center(
-          child: Text(
-            widget.text ?? 'Lorem ipsum',
-            textAlign: TextAlign.center,
-            style: interbutton1.copyWith(color: eerieBlack),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              widget.text ?? 'Lorem ipsum',
+              textAlign: TextAlign.center,
+              style: (widget.text!.length > 25)
+                  ? interbutton2.copyWith(color: eerieBlack)
+                  : interbutton1.copyWith(color: eerieBlack),
+            ),
           ),
         ),
       ),

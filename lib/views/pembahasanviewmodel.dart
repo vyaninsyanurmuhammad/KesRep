@@ -7,6 +7,10 @@ class PembahasanViewModel {
   String Function(String)? jawaban;
   bool Function(String)? isImageJawaban;
   bool Function(String)? isCorrect;
+  void Function(String)? openImage;
+
+  final bool? isImageOpen;
+  final String? imageOpen;
 
   PembahasanViewModel({
     this.quizzes,
@@ -14,6 +18,9 @@ class PembahasanViewModel {
     this.isImageJawaban,
     this.jawaban,
     this.isCorrect,
+    this.isImageOpen,
+    this.imageOpen,
+    this.openImage,
   });
 
   factory PembahasanViewModel.create(Store<AppState> store) {
@@ -34,10 +41,10 @@ class PembahasanViewModel {
     _isImageAnswered(String jawaban) {
       bool _isImage = false;
 
-      var _split = jawaban.split('://');
+      var _split = jawaban.split('/');
 
       for (var i = 0; i < _split.length; i++) {
-        if (_split[i] == 'http' || _split[i] == 'https') {
+        if (_split[i] == 'assets') {
           _isImage = true;
         }
       }
@@ -74,12 +81,19 @@ class PembahasanViewModel {
       return _isCorrect;
     }
 
+    _openImage(String image) {
+      store.dispatch(IsImagePembahasanOpenAction(image: image, isOpen: true));
+    }
+
     return PembahasanViewModel(
       quizzes: store.state.pembahasanState?.quizzes,
       quizzesAnswered: store.state.pembahasanState?.quizzesAnswered,
       isImageJawaban: _isImageAnswered,
       jawaban: _jawaban,
       isCorrect: _isCorrect,
+      openImage: _openImage,
+      isImageOpen: store.state.pembahasanState?.isImageOpen,
+      imageOpen: store.state.pembahasanState?.imageOpen,
     );
   }
 }

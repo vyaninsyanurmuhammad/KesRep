@@ -1,0 +1,429 @@
+{
+    "id": "1",
+    "level": "1",
+    "medalRequred": 0,
+    "title": "Kewanitaan",
+    "gambar": "assets/materi/kewanitaan.png",
+    "quiz": [
+        {
+            "id": "1",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Apa tanda-tanda seks primer pada perempuan ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tanda-tanda seks primer, yakni berhubungan langsung dengan organ seks seperti menstruasi untuk perempuan dan mimpi basah untuk laki-laki.\n\nSementara tanda-tanda seks sekunder, pada remaja laki-laki terjadi perubahan suara, tumbuhnya jakun, penis dan buah zakar bertambah besar, terjadinya ereksi dan ejakulasi, badan berotot, tumbuhnya kumis, cambang dan rambut di sekitar kemaluan dan ketiak. Pada remaja putri ditandai dengan payudara membesar, pinggul melebar, dan tumbuhnya rambut di ketiak dan sekitar kemaluan."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Mensturasi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tumbuh jakun"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mimpi basah"
+                },
+                {
+                    "isRight": false,
+                    "data": "Pinggul membesar"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Apa tanda-tanda seks skunder pada perempuan ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tanda-tanda seks sekunder, pada remaja laki-laki terjadi perubahan suara, tumbuhnya jakun, penis dan buah zakar bertambah besar, terjadinya ereksi dan ejakulasi, badan berotot, tumbuhnya kumis, cambang dan rambut di sekitar kemaluan dan ketiak. Pada remaja putri ditandai dengan payudara membesar, pinggul melebar, dan tumbuhnya rambut di ketiak dan sekitar kemaluan."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Tumbuh jakun"
+                },
+                {
+                    "isRight": false,
+                    "data": "Badan berotot"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tumbuh kumis"
+                },
+                {
+                    "isRight": true,
+                    "data": "Tumbuh rambut di ketiak"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Bagaimana membersihkan kemaluan setelah buang air kecil pada perempuan ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Bagi perempuan setelah buang air kecil membersihkan dari arah depan ke belakang agar kuman dari anus tidak ikut ke organ reproduksi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Dibersihkan dari arah kanan ke kiri"
+                },
+                {
+                    "isRight": true,
+                    "data": "Dibersihkan dari arah depan ke belakang"
+                },
+                {
+                    "isRight": false,
+                    "data": "Dibersihkan secara memutar"
+                },
+                {
+                    "isRight": false,
+                    "data": "Dibersihkan dari arah belakang ke depan"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih bahan celana dalam seperti apa yang cocok untuk perempuan",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Bagi perempuan setelah buang air kecil membersihkan dari arah depan ke belakang agar kuman dari anus tidak ikut ke organ reproduksi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Berukuran ekstra besar"
+                },
+                {
+                    "isRight": false,
+                    "data": "Berwarna merah"
+                },
+                {
+                    "isRight": true,
+                    "data": "Mudah menyerap keringat"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tidak mudah terbakar"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "tipe": "imageandtext",
+            "gambar": "assets/materi/stageOne/1.png",
+            "pertanyaan": "Bagian yang ditunjuk oleh huruf B merupakan organ ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/1.1.png",
+                "deskripsi": "1. Vagina adalah saluran yang menghubungkan serviks (bagian bawah rahim) dengan bagian luar tubuh. Letaknya di dalam tubuh, belakang kandung kemih, lebih rendah dari rahim.\n\n2. Ovarium, atau indung telur, berada di sisi kanan dan kiri rongga panggul yang bersebelahan dengan bagian rahim atas. Alat atau organ reproduksi wanita yang satu ini bertanggung jawab untuk memproduksi hormon seperti estrogen, progesteron dan ovum atau yang biasa disebut sel telur.\n\n3. Tuba falopi atau oviduk memiliki bentuk seperti saluran bercorong yang masing-masing membentang dari ujung kanan dan kiri pada rahim atas ke ujung ovarium. Organ reproduksi yang satu ini mempunyai fungsi untuk mengangkut ovum dan membawanya ke dalam infundibulum (bagian ujung tuba falopi) menuju rahim.\n\n4. Rahim (uterus) adalah organ reproduksi wanita yang berongga dan bentuknya seperti buah pir. Ini merupakan rumah bagi janin yang sedang berkembang.\n\n5. Serviks, merupakan leher rahim yang berada di bagian bawah dan menjadi jalan menuju vagina serta tubuh utama rahim yaitu korpus."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Serviks"
+                },
+                {
+                    "isRight": false,
+                    "data": "Ovarium"
+                },
+                {
+                    "isRight": false,
+                    "data": "Rahim"
+                },
+                {
+                    "isRight": false,
+                    "data": "Oviduk"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "tipe": "imageandimage",
+            "gambar": "assets/materi/stageOne/1.png",
+            "pertanyaan": "Ovarium ditunjukkan oleh huruf...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/1.1.png",
+                "deskripsi": "1. Vagina adalah saluran yang menghubungkan serviks (bagian bawah rahim) dengan bagian luar tubuh. Letaknya di dalam tubuh, belakang kandung kemih, lebih rendah dari rahim.\n\n2. Ovarium, atau indung telur, berada di sisi kanan dan kiri rongga panggul yang bersebelahan dengan bagian rahim atas. Alat atau organ reproduksi wanita yang satu ini bertanggung jawab untuk memproduksi hormon seperti estrogen, progesteron dan ovum atau yang biasa disebut sel telur.\n\n3. Tuba falopi atau oviduk memiliki bentuk seperti saluran bercorong yang masing-masing membentang dari ujung kanan dan kiri pada rahim atas ke ujung ovarium. Organ reproduksi yang satu ini mempunyai fungsi untuk mengangkut ovum dan membawanya ke dalam infundibulum (bagian ujung tuba falopi) menuju rahim.\n\n4. Rahim (uterus) adalah organ reproduksi wanita yang berongga dan bentuknya seperti buah pir. Ini merupakan rumah bagi janin yang sedang berkembang.\n\n5. Serviks, merupakan leher rahim yang berada di bagian bawah dan menjadi jalan menuju vagina serta tubuh utama rahim yaitu korpus."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/1.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih makanan atau minuman yang menjaga kesehatan vagina",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Kamu mungkin tidak menyangka ada banyak lho, jenis makanan yang dapat menyehatkan vagina. Makanan-makanan tersebut antara lain:\n\n1. Ubi yang  kaya akan beta karoten dan vitamin A.\n\n2. Apel yang mengadung phloridzin sehingga dapat melancarkan aliran darah pada vagina, Alpukat yang kaya akan lemak sehat, vitamin B6, serta kalium.\n\n3. Sayuran hijau ynag kaya nutrisi tinggi dapat melancarkan sirkulasi darah di vagina dan mencegah vagina kering."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/2.1.2.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/2.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih warna darah haid yang kurang estrogen dan tanda ovulasi",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/3.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.2.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/3.1.4.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.3.png"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih warna darah haid normal",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/3.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/3.1.5.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.6.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.7.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.3.png"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pilih warna darah haid tanda infeksi menular seksual",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/3.1.png",
+                "deskripsi": ""
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.5.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.3.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/3.1.7.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/3.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih yang bukan merupakan fase menstruasi",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Fase menstruasi pada wanita antara lain sebagai berikut :\n\n1. Fase menstruasi, Fase ini ditandai dengan luruhnya dinding rahim yang berisi pembuluh darah dan cairan lendir. Proses ini dimulai sejak hari pertama menstruasi dan berlangsung selama 4–6 hari.\n\n2. Fase folikular, Pada fase ini ovarium akan membentuk folikel yang berisi sel telur yang belum matang. Folikel dan sel telur ini akan tumbuh dan merangsang penebalan di dinding rahim. Fase folikular umumnya berlangsung selama 11–27 hari, tergantung siklus pada masing-masing wanita.\n\n3. Fase ovulasi, Fase ini terjadi ketika ovarium melepaskan sel telur yang sudah matang. Sel telur ini siap dibuahi oleh sperma di saluran indung telur. Namun, jika tidak dibuahi oleh sperma, sel telur akan melebur dalam 24 jam setelah terjadinya fase ovulasi. Fase ovulasi umumnya terjadi pada hari ke 14 siklus menstruasi.\n\n4. Fase luteal, Fase ini ditandai dengan berubahnya sel telur menjadi korpus luteum. Jaringan ini akan melepaskan hormon yang mempertebal dinding rahim. Namun, jika tidak dibuahi oleh sperma, korpus luteum akan menyusut dan kembali diserap. Akhirnya lapisan rahim akan luruh selama menstruasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Fase Folikuler"
+                },
+                {
+                    "isRight": false,
+                    "data": "Fase Menstruasi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Fase Ovulasi"
+                },
+                {
+                    "isRight": true,
+                    "data": "Fase Kehamilan"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Berapa rata-rata siklus menstruasi pada wanita terjadi ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Umumnya, siklus menstruasi normal pada wanita rata-rata terjadi setiap 28 hari. Namun, setiap wanita dapat memiliki siklus menstruasi yang berbeda-beda. Kebanyakan, wanita akan mengalami menstruasi pertama mereka antara usia 12-14 tahun. Tetapi, beberapa orang bisa mengalami menstruasi lebih awal atau lebih lambat dari itu."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/4.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/4.1.2.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageOne/4.1.3.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageOne/4.1.4.png"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Berapa jam sekali normalnya mengganti pembalut dalam sehari?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Selama menstruasi, pembalut harus diganti sesering yang diperlukan untuk mencegah pemakaian pembalut basah atau penuh dengan darah menstruasi yang terlalu lama. Idealnya kamu harus mengganti pembalut empat jam sekali dalam sehari."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "3 Jam sekali"
+                },
+                {
+                    "isRight": true,
+                    "data": "4 Jam sekali"
+                },
+                {
+                    "isRight": false,
+                    "data": "5 Jam sekali"
+                },
+                {
+                    "isRight": false,
+                    "data": "6 Jam sekali"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Organ reproduksi yang disebut Ovarium berguna untuk ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/1.1.png",
+                "deskripsi": "1. Vagina adalah saluran yang menghubungkan serviks (bagian bawah rahim) dengan bagian luar tubuh. Letaknya di dalam tubuh, belakang kandung kemih, lebih rendah dari rahim.\n\n2. Ovarium, atau indung telur, berada di sisi kanan dan kiri rongga panggul yang bersebelahan dengan bagian rahim atas. Alat atau organ reproduksi wanita yang satu ini bertanggung jawab untuk memproduksi hormon seperti estrogen, progesteron dan ovum atau yang biasa disebut sel telur.\n\n3. Tuba falopi atau oviduk memiliki bentuk seperti saluran bercorong yang masing-masing membentang dari ujung kanan dan kiri pada rahim atas ke ujung ovarium. Organ reproduksi yang satu ini mempunyai fungsi untuk mengangkut ovum dan membawanya ke dalam infundibulum (bagian ujung tuba falopi) menuju rahim.\n\n4. Rahim (uterus) adalah organ reproduksi wanita yang berongga dan bentuknya seperti buah pir. Ini merupakan rumah bagi janin yang sedang berkembang.\n\n5. Serviks, merupakan leher rahim yang berada di bagian bawah dan menjadi jalan menuju vagina serta tubuh utama rahim yaitu korpus."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Tempat janin untuk berkembang"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menghubungkan ovarium dan rahim"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penghubung serviks ke luar tubuh"
+                },
+                {
+                    "isRight": true,
+                    "data": "Menghasilkan sel telur"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Organ repriduksi yang disebut Rahim berguna untuk ...",
+            "penjelasan": {
+                "gambar": "assets/materi/stageOne/1.1.png",
+                "deskripsi": "1. Vagina adalah saluran yang menghubungkan serviks (bagian bawah rahim) dengan bagian luar tubuh. Letaknya di dalam tubuh, belakang kandung kemih, lebih rendah dari rahim.\n\n2. Ovarium, atau indung telur, berada di sisi kanan dan kiri rongga panggul yang bersebelahan dengan bagian rahim atas. Alat atau organ reproduksi wanita yang satu ini bertanggung jawab untuk memproduksi hormon seperti estrogen, progesteron dan ovum atau yang biasa disebut sel telur.\n\n3. Tuba falopi atau oviduk memiliki bentuk seperti saluran bercorong yang masing-masing membentang dari ujung kanan dan kiri pada rahim atas ke ujung ovarium. Organ reproduksi yang satu ini mempunyai fungsi untuk mengangkut ovum dan membawanya ke dalam infundibulum (bagian ujung tuba falopi) menuju rahim.\n\n4. Rahim (uterus) adalah organ reproduksi wanita yang berongga dan bentuknya seperti buah pir. Ini merupakan rumah bagi janin yang sedang berkembang.\n\n5. Serviks, merupakan leher rahim yang berada di bagian bawah dan menjadi jalan menuju vagina serta tubuh utama rahim yaitu korpus."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Tempat janin untuk berkembang"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menghubungkan ovarium dan rahim"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penghubung serviks ke luar tubuh"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menghasilkan sel telur"
+                }
+            ]
+        }
+    ]
+}

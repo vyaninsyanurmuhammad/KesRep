@@ -32,11 +32,14 @@ class FireAuthHelper {
     required String name,
     required String email,
     required String password,
+    required Store<AppState> store,
   }) async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
 
     try {
+      store.dispatch(IsLoadingAuthAction(isLoading: true));
+
       UserCredential userCredential = await auth.createUserWithEmailAndPassword(
         email: email,
         password: password,
@@ -52,7 +55,7 @@ class FireAuthHelper {
             context: context,
             title: 'Kamu tidak perlu panik !',
             description:
-                'Password yang ingin kamu gunakan terlalu mudah, coba buat password yang lebih susah',
+                'Password yang ingin kamu gunakan kurang dari 6 karakter, coba buat password yang lebih dari 6 karakter',
             redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       } else if (e.code == 'email-already-in-use') {
@@ -61,6 +64,22 @@ class FireAuthHelper {
             title: 'Kamu tidak perlu panik !',
             description:
                 'Email yang ingin kamu gunakan sudah terdaftar, coba gunakan email lain yang kamu punya',
+            redButtonText: 'Dimengerti',
+            onTapRed: () => Navigator.pop(context));
+      } else if (e.code == 'invalid-email') {
+        modalErrorAuthWidget(
+            context: context,
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Email yang ingin kamu gunakan sepertinya salah, coba periksa kembali email yang ingin kamu gunakan',
+            redButtonText: 'Dimengerti',
+            onTapRed: () => Navigator.pop(context));
+      } else {
+        modalErrorAuthWidget(
+            context: context,
+            title: 'Kamu tidak perlu panik !',
+            description:
+                'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.message.toString()}"',
             redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       }
@@ -74,6 +93,8 @@ class FireAuthHelper {
           onTapRed: () => Navigator.pop(context));
     }
 
+    store.dispatch(IsLoadingAuthAction(isLoading: false));
+
     if (user != null) {
       Navigator.pushReplacementNamed(context, '/loadingpage');
     }
@@ -86,11 +107,14 @@ class FireAuthHelper {
     required BuildContext context,
     required String email,
     required String password,
+    required Store<AppState> store,
   }) async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
 
     try {
+      store.dispatch(IsLoadingAuthAction(isLoading: true));
+
       UserCredential userCredential = await auth.signInWithEmailAndPassword(
         email: email,
         password: password,
@@ -110,7 +134,7 @@ class FireAuthHelper {
             context: context,
             title: 'Kamu tidak perlu panik !',
             description:
-                'Pastikan lagi password kamu, sepertinya password yang kamu isi salah atau kurang tepat',
+                'Pastikan lagi password kamu, sepertinya password yang kamu isi salah',
             redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       } else {
@@ -118,11 +142,21 @@ class FireAuthHelper {
             context: context,
             title: 'Kamu tidak perlu panik !',
             description:
-                'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.toString()}"',
+                'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.message.toString()}"',
             redButtonText: 'Dimengerti',
             onTapRed: () => Navigator.pop(context));
       }
+    } catch (e) {
+      modalErrorAuthWidget(
+          context: context,
+          title: 'Kamu tidak perlu panik !',
+          description:
+              'Coba minta bantuan orang didekatmu untuk menerjemahkan masalah ini "${e.toString()}"',
+          redButtonText: 'Dimengerti',
+          onTapRed: () => Navigator.pop(context));
     }
+
+    store.dispatch(IsLoadingAuthAction(isLoading: false));
 
     if (user != null) {
       Navigator.pushReplacementNamed(context, '/loadingpage');
@@ -138,7 +172,8 @@ class FireAuthHelper {
 
     User? user;
 
-    final googleUser = await _googleSignIn.signIn();
+    final googleUser =
+        await _googleSignIn.signIn().catchError((onError) => print(onError));
 
     if (googleUser == null) return null;
 

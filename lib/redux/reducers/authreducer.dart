@@ -5,6 +5,7 @@ final authReducer = combineReducers<AuthState?>([
   TypedReducer<AuthState?, ClearSignInAction>(_clearSignInAction),
   TypedReducer<AuthState?, SignUpAction>(_signUpAction),
   TypedReducer<AuthState?, ClearSignUpAction>(_clearSignUpAction),
+  TypedReducer<AuthState?, IsLoadingAuthAction>(_isLoadingAuthAction),
 ]);
 
 AuthState? _signInAction(AuthState? state, SignInAction action) {
@@ -22,4 +23,8 @@ AuthState? _signUpAction(AuthState? state, SignUpAction action) {
 
 AuthState? _clearSignUpAction(AuthState? state, ClearSignUpAction action) {
   return state?.copyWith(name: '', email: '', password: '');
+}
+
+AuthState? _isLoadingAuthAction(AuthState? state, IsLoadingAuthAction action) {
+  return state?.copyWith(isLoading: action.isLoading);
 }

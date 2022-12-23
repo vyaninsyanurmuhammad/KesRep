@@ -69,24 +69,17 @@ class StageAchieved {
   String? level;
   bool? isPlayed;
   String? medalAchieved;
-  int? firstScore;
-  int? score;
+  List<int>? scores;
 
   StageAchieved(
-      {this.id,
-      this.level,
-      this.isPlayed,
-      this.medalAchieved,
-      this.firstScore,
-      this.score});
+      {this.id, this.level, this.isPlayed, this.medalAchieved, this.scores});
 
   StageAchieved.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     level = json['level'];
     isPlayed = json['isPlayed'];
     medalAchieved = json['medalAchieved'];
-    firstScore = json['firstScore'];
-    score = json['score'];
+    scores = json['scores'].cast<int>();
   }
 
   Map<String, dynamic> toJson() {
@@ -95,8 +88,7 @@ class StageAchieved {
     data['level'] = level;
     data['isPlayed'] = isPlayed;
     data['medalAchieved'] = medalAchieved;
-    data['firstScore'] = firstScore;
-    data['score'] = score;
+    data['scores'] = scores;
     return data;
   }
 }

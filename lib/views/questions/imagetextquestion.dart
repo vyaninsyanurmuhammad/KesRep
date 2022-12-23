@@ -1,6 +1,7 @@
 part of 'questions.dart';
 
 Widget imageTextQuestion({
+  required context,
   Quiz? quiz,
   InGameViewModel? viewModel,
   String? character,
@@ -20,65 +21,54 @@ Widget imageTextQuestion({
                 color: lightMint,
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Stack(
-                alignment: Alignment.bottomRight,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Center(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            top: 5,
-                            left: 5,
-                            right: 5,
-                          ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 5,
+                          left: 5,
+                          right: 5,
+                        ),
+                        child: GestureDetector(
+                          onTap: () {
+                            viewModel!.openImage!(quiz!.gambar!);
+                          },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15),
-                            child: Image.network(
-                                quiz!.gambar ??
-                                    'https://sdnsusukan07.sch.id/asset/images/noimage.jpg',
-                                loadingBuilder:
-                                    (context, widget, loadingProgress) =>
-                                        (loadingProgress == null)
-                                            ? widget
-                                            : const SizedBox(
-                                                width: 180,
-                                                height: 120,
-                                                child: Center(
-                                                  child:
-                                                      CircularProgressIndicator(),
-                                                ),
-                                              ),
+                            child: Image.asset(
+                                quiz!.gambar ?? 'assets/materi/risiko.png',
                                 errorBuilder: (context, exception, stackTrace) {
-                                  return SizedBox(
-                                    width: 180,
-                                    height: 120,
-                                    child: Center(
-                                      child: Text(
-                                        "Image Error",
-                                        style: interheadline3.copyWith(
-                                            color: davysGrey),
-                                      ),
-                                    ),
-                                  );
-                                },
+                              return SizedBox(
                                 width: 180,
                                 height: 120,
-                                fit: BoxFit.fill),
+                                child: Center(
+                                  child: Text(
+                                    "Image Error",
+                                    style: interheadline3.copyWith(
+                                        color: davysGrey),
+                                  ),
+                                ),
+                              );
+                            }, width: 180, height: 120, fit: BoxFit.contain),
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(20),
-                          child: Text(
-                            quiz.pertanyaan ??
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
-                            style: interheadline7.copyWith(
-                              color: spanishGray,
-                            ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsets.only(top: 20, left: 20, right: 20),
+                        child: Text(
+                          quiz.pertanyaan ??
+                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                          style: interheadline7.copyWith(
+                            color: spanishGray,
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   (viewModel?.isPlayingSound == true)
                       ? const Padding(
@@ -92,7 +82,7 @@ Widget imageTextQuestion({
                           onPressed: () {
                             ClickHelper.clickSound();
 
-                            viewModel!.playSound!(quiz.sound!);
+                            viewModel!.playSound!(quiz.pertanyaan!);
                           },
                           icon: Icon(
                             Icons.volume_up_rounded,

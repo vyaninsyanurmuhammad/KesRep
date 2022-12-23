@@ -48,144 +48,162 @@ class InGamePage extends StatelessWidget {
                 ),
                 child: Scaffold(
                   backgroundColor: white,
-                  body: Column(
+                  body: Stack(
                     children: [
-                      inGameAppbarWidget(
-                        context: context,
-                        model: viewModel,
-                      ),
-                      Flexible(
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width,
-                          height: MediaQuery.of(context).size.height,
-                          child: PageView(
-                            controller: viewModel.pageController,
-                            physics: const NeverScrollableScrollPhysics(),
-                            children: viewModel.quizzes!
-                                .asMap()
-                                .entries
-                                .map(
-                                  (e) => (e.value.tipe == 'textandtext')
-                                      ? textTextQuestion(
-                                          quiz: e.value,
-                                          viewModel: viewModel,
-                                          character: CharacterHelper
-                                              .shuffledTenCharacter()[e.key])
-                                      : (e.value.tipe == 'imageandtext')
-                                          ? imageTextQuestion(
+                      Column(
+                        children: [
+                          inGameAppbarWidget(
+                            context: context,
+                            model: viewModel,
+                          ),
+                          Flexible(
+                            child: SizedBox(
+                              width: MediaQuery.of(context).size.width,
+                              height: MediaQuery.of(context).size.height,
+                              child: PageView(
+                                controller: viewModel.pageController,
+                                physics: const NeverScrollableScrollPhysics(),
+                                children: viewModel.quizzes!
+                                    .asMap()
+                                    .entries
+                                    .map(
+                                      (e) => (e.value.tipe == 'textandtext')
+                                          ? textTextQuestion(
                                               quiz: e.value,
                                               viewModel: viewModel,
                                               character: CharacterHelper
                                                       .shuffledTenCharacter()[
                                                   e.key])
-                                          : (e.value.tipe == 'imageandimage')
-                                              ? imageImageQuestion(
+                                          : (e.value.tipe == 'imageandtext')
+                                              ? imageTextQuestion(
+                                                  context: context,
                                                   quiz: e.value,
                                                   viewModel: viewModel,
                                                   character: CharacterHelper
                                                           .shuffledTenCharacter()[
                                                       e.key])
-                                              : textImageQuestion(
-                                                  quiz: e.value,
-                                                  viewModel: viewModel,
-                                                  character: CharacterHelper
-                                                          .shuffledTenCharacter()[
-                                                      e.key]),
-                                )
-                                .toList(),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 30),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            bigButtonWidget(
-                              onTap: () {
-                                ClickHelper.clickSound();
-
-                                viewModel.backQuiz!();
-                              },
-                              width: 150,
-                              text: 'Sebelumnya',
-                              isDisable: (viewModel.numberOfQuestion! < 2)
-                                  ? true
-                                  : false,
-                              primaryColor: mediumAquamarineLow,
-                              secondaryColor: mediumAquamarine,
+                                              : (e.value.tipe ==
+                                                      'imageandimage')
+                                                  ? imageImageQuestion(
+                                                      quiz: e.value,
+                                                      viewModel: viewModel,
+                                                      character: CharacterHelper
+                                                              .shuffledTenCharacter()[
+                                                          e.key])
+                                                  : textImageQuestion(
+                                                      quiz: e.value,
+                                                      viewModel: viewModel,
+                                                      character: CharacterHelper
+                                                              .shuffledTenCharacter()[
+                                                          e.key]),
+                                    )
+                                    .toList(),
+                              ),
                             ),
-                            bigButtonWidget(
-                              onTap: () async {
-                                ClickHelper.clickSound();
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 30),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                bigButtonWidget(
+                                  onTap: () {
+                                    ClickHelper.clickSound();
 
-                                if (viewModel.numberOfQuestion ==
-                                        viewModel.quizzes?.length.toDouble() ||
-                                    viewModel.numberOfQuestion! > 9.0) {
-                                  await modalCloseGameWidget(
-                                    context: context,
-                                    background: lemonMeringue,
-                                    title: "Ingin memastikan saja",
-                                    description:
-                                        "Apa kamu yakin ingin menyelesaikan permainan? Saya sarankan untuk mengecek kembali jawabanmu",
-                                    redButtonText: "Yakin!",
-                                    onTapBlue: () {
-                                      ClickHelper.clickSound();
+                                    viewModel.backQuiz!();
+                                  },
+                                  width: 150,
+                                  text: 'Sebelumnya',
+                                  isDisable: (viewModel.numberOfQuestion! < 2)
+                                      ? true
+                                      : false,
+                                  primaryColor: mediumAquamarineLow,
+                                  secondaryColor: mediumAquamarine,
+                                ),
+                                bigButtonWidget(
+                                  onTap: () async {
+                                    ClickHelper.clickSound();
 
-                                      Navigator.pop(context);
-                                    },
-                                    onTapRed: () {
-                                      ClickHelper.clickSound();
+                                    if (viewModel.numberOfQuestion ==
+                                            viewModel.quizzes?.length
+                                                .toDouble() ||
+                                        viewModel.numberOfQuestion! > 9.0) {
+                                      await modalCloseGameWidget(
+                                        context: context,
+                                        background: lemonMeringue,
+                                        title: "Ingin memastikan saja",
+                                        description:
+                                            "Apa kamu yakin ingin menyelesaikan permainan? Saya sarankan untuk mengecek kembali jawabanmu",
+                                        redButtonText: "Yakin!",
+                                        onTapBlue: () {
+                                          ClickHelper.clickSound();
 
-                                      Navigator.pushNamedAndRemoveUntil(
-                                        context,
-                                        '/resultpage',
-                                        (route) => false,
-                                        arguments: {
-                                          'score': viewModel.quizScore!(),
-                                          'quizzes': viewModel.quizzes,
-                                          'quizzesAnswered':
-                                              viewModel.quizzesAnswered,
-                                          'unitAchived': viewModel.unitAchived,
-                                          'stageAchived':
-                                              viewModel.stageAchieved,
-                                          'positionUnit':
-                                              viewModel.positionUnit,
-                                          'positionStage':
-                                              viewModel.positionStage,
+                                          Navigator.pop(context);
+                                        },
+                                        onTapRed: () {
+                                          ClickHelper.clickSound();
+
+                                          Navigator.pushNamedAndRemoveUntil(
+                                            context,
+                                            '/resultpage',
+                                            (route) => false,
+                                            arguments: {
+                                              'score': viewModel.quizScore!(),
+                                              'quizzes': viewModel.quizzes,
+                                              'quizzesAnswered':
+                                                  viewModel.quizzesAnswered,
+                                              'unitAchived':
+                                                  viewModel.unitAchived,
+                                              'stageAchived':
+                                                  viewModel.stageAchieved,
+                                              'positionUnit':
+                                                  viewModel.positionUnit,
+                                              'positionStage':
+                                                  viewModel.positionStage,
+                                            },
+                                          );
+                                          viewModel
+                                              .clearInGameAndRecordAction!();
                                         },
                                       );
-                                      viewModel.clearInGameAndRecordAction!();
-                                    },
-                                  );
-                                } else {
-                                  viewModel.nextQuiz!();
-                                }
-                              },
-                              width: 150,
-                              text: (viewModel.numberOfQuestion ==
-                                          viewModel.quizzes?.length
-                                              .toDouble() ||
-                                      viewModel.numberOfQuestion! > 9.0)
-                                  ? 'Selesai'
-                                  : 'Berikutnya',
-                              isDisable: false,
-                              primaryColor: (viewModel.numberOfQuestion ==
-                                          viewModel.quizzes?.length
-                                              .toDouble() ||
-                                      viewModel.numberOfQuestion! > 9.0)
-                                  ? naplesYellow
-                                  : mediumAquamarineLow,
-                              secondaryColor: (viewModel.numberOfQuestion ==
-                                          viewModel.quizzes?.length
-                                              .toDouble() ||
-                                      viewModel.numberOfQuestion! > 9.0)
-                                  ? cyberYellowLow
-                                  : mediumAquamarine,
+                                    } else {
+                                      viewModel.nextQuiz!();
+                                    }
+                                  },
+                                  width: 150,
+                                  text: (viewModel.numberOfQuestion ==
+                                              viewModel.quizzes?.length
+                                                  .toDouble() ||
+                                          viewModel.numberOfQuestion! > 9.0)
+                                      ? 'Selesai'
+                                      : 'Berikutnya',
+                                  isDisable: false,
+                                  primaryColor: (viewModel.numberOfQuestion ==
+                                              viewModel.quizzes?.length
+                                                  .toDouble() ||
+                                          viewModel.numberOfQuestion! > 9.0)
+                                      ? naplesYellow
+                                      : mediumAquamarineLow,
+                                  secondaryColor: (viewModel.numberOfQuestion ==
+                                              viewModel.quizzes?.length
+                                                  .toDouble() ||
+                                          viewModel.numberOfQuestion! > 9.0)
+                                      ? cyberYellowLow
+                                      : mediumAquamarine,
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
+                      (viewModel.isImageOpen == true)
+                          ? imageQuizViewerWidget(
+                              image: viewModel.imageOpen,
+                              onClose: () {
+                                store.dispatch(
+                                    IsImageOpenAction(isImageOpen: false));
+                              })
+                          : const SizedBox(),
                     ],
                   ),
                 ),

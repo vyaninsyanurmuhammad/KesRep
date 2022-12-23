@@ -37,18 +37,17 @@ Widget textImageQuestion({
                   color: lightMint,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Stack(
-                  alignment: Alignment.bottomRight,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Text(
-                          quiz!.pertanyaan ??
-                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
-                          style: interheadline7.copyWith(
-                            color: spanishGray,
-                          ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(top: 20, left: 20, right: 20),
+                      child: Text(
+                        quiz!.pertanyaan ??
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor.',
+                        style: interheadline7.copyWith(
+                          color: spanishGray,
                         ),
                       ),
                     ),
@@ -64,7 +63,7 @@ Widget textImageQuestion({
                             onPressed: () {
                               ClickHelper.clickSound();
 
-                              viewModel.playSound!(quiz.sound!);
+                              viewModel.playSound!(quiz.pertanyaan!);
                             },
                             icon: Icon(
                               Icons.volume_up_rounded,

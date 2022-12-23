@@ -6,6 +6,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kesrep/helpers/helpers.dart';
+import 'package:kesrep/redux/middlewares/middlewares.dart';
 import 'package:rive/rive.dart';
 import 'reducers/reducers.dart';
 import 'package:redux/redux.dart';

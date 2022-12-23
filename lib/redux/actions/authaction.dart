@@ -9,6 +9,12 @@ class SignInAction {
 
 class ClearSignInAction {}
 
+class IsLoadingAuthAction {
+  final bool? isLoading;
+
+  IsLoadingAuthAction({this.isLoading});
+}
+
 class SignUpAction {
   final String? name;
   final String? email;

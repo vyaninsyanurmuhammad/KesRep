@@ -1,0 +1,429 @@
+{
+    "id": "5",
+    "level": "5",
+    "medalRequred": 4,
+    "title": "Risiko",
+    "gambar": "assets/materi/risiko.png",
+    "quiz": [
+        {
+            "id": "1",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Apa tanda-tanda seks primer pada perempuan ?",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Orchitis adalah radang pada testis yang disebabkan oleh infeksi virus atau bakteri. Kondisi ini bisa terjadi pada satu atau kedua testis. Umumnya, orchitis terjadi akibat penyakit menular seksual atau gondongan. Jika tidak ditangani dengan tepat, orchitis dapat menyebabkan mandul.\n\nBeberapa faktor yang bisa meningkatkan risiko seseorang terkena orchitis adalah:\n\n1. Berusia lebih dari 45 tahun\n\n2. Tidak mendapatkan vaksin MMR\n\n3. Menderita infeksi saluran kemih yang berulang\n\n4. Menderita pembesaran prostat jinak\n\n5. Terlahir dengan saluran kemih yang tidak normal\n\n6. Menggunakan kateter pada saluran kemih dalam waktu lama\n\n7. Pernah menjalani operasi kelamin atau saluran kemih\n\n8. Pernah atau sedang menderita infeksi menular seksual"
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Makan tepat waktu"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mendapatkan vaksin MMR"
+                },
+                {
+                    "isRight": false,
+                    "data": "Sering berolahraga"
+                },
+                {
+                    "isRight": true,
+                    "data": "Berusia lebih dari 45 tahun"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Faktor yang bisa meningkatkan risiko seseorang terkena kanker serviks pada wanita adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Kanker serviks adalah kanker yang muncul pada sel-sel di leher rahim. Kanker ini terjadi saat ada sel-sel di leher rahim alias serviks yang tidak normal, dan berkembang terus dengan tidak terkendali. Sel-sel abnormal ini dapat berkembang dengan cepat, sehingga mengakibatkan tumbuhnya tumor pada serviks. Tumor yang ganas ini kemudian akan berkembang dan menjadi penyebab kanker serviks.\n\nBeberapa faktor risiko yang dapat meningkatkan seorang wanita terkena kanker serviks, antara lain:\n\n1.Faktor keturunan.\n\n2. Usia, terutama wanita yang berusia 40 tahun ke atas.\n\n3. Merokok.\n\n4. Kurangnya konsumsi buah dan sayur.\n\n5. Berat badan berlebih (obesitas).\n\n6. Penggunaan kontrasepsi minum (pil KB) jangka panjang.\n\n7. Frekuensi hamil dan melahirkan.\n\n8. Hamil atau melahirkan di usia sangat muda.\n\n9. Kondisi medis tertentu, seperti infeksi"
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Merokok"
+                },
+                {
+                    "isRight": false,
+                    "data": "Memakan buah-buahan"
+                },
+                {
+                    "isRight": false,
+                    "data": "Tidur tepat waktu"
+                },
+                {
+                    "isRight": false,
+                    "data": "Diare"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pilih penyakit yang menular melalui kontak dengan cairan tubuh penderita, seperti darah, sperma, cairan vagina, cairan anus, serta ASI",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "HIV (human immunodeficiency virus) adalah virus yang merusak sistem kekebalan tubuh dengan menginfeksi dan menghancurkan sel CD4. Jika makin banyak sel CD4 yang hancur, daya tahan tubuh akan makin melemah sehingga rentan diserang berbagai penyakit. Sedangkan AIDS adalah stadium akhir dari infeksi HIV. Pada tahap ini, kemampuan tubuh untuk melawan infeksi sudah hilang sepenuhnya. Penularan HIV terjadi melalui kontak dengan cairan tubuh penderita, seperti darah, sperma, cairan vagina, cairan anus, serta ASI."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Radang panggul"
+                },
+                {
+                    "isRight": true,
+                    "data": "HIV dan AIDS"
+                },
+                {
+                    "isRight": false,
+                    "data": "Epididimitis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Gangguan Prostat"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Kondisi medis dimana seorang pria tidak mampu mencapai ereksi disebut ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Impotensi adalah ketidakmampuan pria untuk mendapatkan dan mempertahankan ereksi. Kondisi ini juga dikenal sebagai disfungsi ereksi dan dapat memengaruhi kemampuan pria untuk melakukan hubungan seksual yang memuaskan. Impotensi adalah kondisi yang sangat umum dan dapat terjadi pada semua usia. Namun, paling sering terjadi pada pria yang lebih tua.\n\nMeski bisa terjadi pada semua pria dewasa, ada berbagai faktor yang dapat meningkatkan risiko pria untuk mengalami impotensi, di antaranya: \n\n1. Kondisi medis tertentu, terutama diabetes dan jantung.\n\n2. Penggunaan tembakau yang dapat membatasi aliran darah yang menuju ke pembuluh darah dan arteri. Kondisi ini meningkatkan risiko terjadinya masalah kesehatan kronis yang berujung pada disfungsi ereksi.\n\n3. Kelebihan berat badan, terutama jika mengalami obesitas.\n\n4. Menjalani perawatan medis tertentu, seperti operasi prostat atau pengobatan radiasi untuk kanker.\n\n5. Cedera, terutama jika merusak saraf atau arteri yang mengontrol ereksi.\n\n6. Konsumsi obat tertentu, termasuk obat golongan antidepresan, antihistamin, dan obat untuk tekanan darah tinggi, nyeri, atau kondisi prostat.\n\n7. Kondisi psikologis, seperti stres, kecemasan atau depresi.\n\n8. Penyalahgunaan narkoba dan alkohol, terutama jika pengidap merupakan pengguna narkoba jangka panjang atau peminum berat."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Infertilitas"
+                },
+                {
+                    "isRight": false,
+                    "data": "Ejakulasi dini"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menopause"
+                },
+                {
+                    "isRight": true,
+                    "data": "Impotensi"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Kondisi medis dimana seorang pria tidak mampu mencapai ereksi disebut ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Infertilitas adalah suatu kondisi dimana kehamilan tidak terjadi pada pasangan yang sudah melakukan hubungan seksual secara rutin dan tanpa pengaman dalam kurun waktu 1 tahun. Setiap pasangan suami istri yang tidak kunjung mendapatkan keturunan pasti mengalami cemas, tidak sedikit suami yang menyalahkan istrinya karena tidak dapat hamil. Namun hal yang perlu diketahui adalah infertilitas tidak hanya disebabkan oleh faktor dari istri.\n\nSekitar 1/3 kasus infertilitas terjadi karena faktor dari suami, faktor-faktor tersebut antara lain ialah:\n\n1. Gangguan fungsi testis dan gangguan ejakulasi.\n\n2. Gangguan hormon.\n\n3. Penyakit genetik.\n\nFaktor penyebab infertilitas yang berasal dari istri antara lain ialah:\n\n1. Usia, semakin tua usia seorang wanita maka semakin rendah kemungkinannya untuk hamil.\n\n2. Merokok.\n\n3. Konsumsi alkohol berlebih.\n\n4. Penurunan atau penambahan berat badan yang ekstrem.\n\n5. Kelelahan dan stress.\n\n6. Penyakit atau kelainan pada sistem kandungan wanita yaitu ovarium, tuba falopi, rahim, dan serviks. "
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Prostatitis"
+                },
+                {
+                    "isRight": true,
+                    "data": "Infertilitas"
+                },
+                {
+                    "isRight": false,
+                    "data": "Endometriosis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Impotensi"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Kondisi ketika endometrium tumbuh di luar dinding rahim disebut ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Endometriosis adalah kondisi ketika endometrium tumbuh di luar dinding rahim. Pada kondisi ini, endometrium dapat tumbuh di indung telur (ovarium), lapisan dalam perut (peritoneum), usus, vagina, atau saluran kemih. Penyebab endometriosis belum diketahui secara pasti, tetapi diduga terkait dengan gangguan aliran darah menstruasi, perubahan sel-sel jaringan lain menjadi sel endometrium, serta perpindahan sel endometrium melalui aliran getah bening."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Prostatitis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Infertilitas"
+                },
+                {
+                    "isRight": true,
+                    "data": "Endometriosis"
+                },
+                {
+                    "isRight": false,
+                    "data": "Impotensi"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Faktor yang bisa meningkatkan risiko seseorang terkena kanker prostat pada pria adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Kanker prostat merupakan jenis kanker yang menyerang pria dan terjadi dalam kelenjar prostat. Jenis kanker ini umumnya memiliki gejala gangguan buang air kecil. Sebagian besar pengidap kanker prostat umumnya berusia lebih dari 65 tahun. Meski begitu, kanker prostat terbilang tidak agresif dan terjadi secara perlahan.\n\nMeski begitu, ada beberapa faktor yang diduga bisa meningkatkan risiko pria mengalami kanker prostat, yaitu:\n\n1. Usia. \n\n2. Mengidap obesitas.\n\n3. Asupan serat yang tidak terpenuhi, seperti kurangnya asupan likopen dan antioksidan.\n\n4. Terpapar bahan kimia berbahaya. \n\n5. Mengidap penyakit menular seksual.\n\n6. Adanya riwayat genetik."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Mengidap obesitas"
+                },
+                {
+                    "isRight": false,
+                    "data": "Rajin berolahraga"
+                },
+                {
+                    "isRight": false,
+                    "data": "Jarang begadang"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mengkonsumsi buah-buahan"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Sindrom yang biasa dialami oleh wanita menjelang masa menstruasi ditandai dengan emosi tidak stabil, perut nyeri, dan suhu badan sedikit meningkat dikenal sebagai ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Premenstrual syndrome (PMS) atau sindrom pramenstruasi adalah gejala-gejala yang dialami wanita sebelum memasuki masa menstruasi. Gejala tersebut dapat berupa perubahan fisik, perilaku, dan emosi.\n\nPremenstrual syndrome pada dasarnya dapat dialami oleh setiap wanita. Namun, ada faktor-faktor yang bisa meningkatkan risiko seorang wanita mengalami PMS, yaitu:\n\n1. Memiliki riwayat depresi\n\n2. Memiliki keluarga dengan premenstrual syndrome\n\n3. Mengalami trauma fisik atau emosi\n\n4. Merokok\n\n5. Mengonsumsi minuman beralkohol secara berlebihan\n\n6. Menjalani pola makan tinggi garam atau gula\n\n7. Jarang berolahraga\n\n8. Kurang waktu beristirahat atau tidur malam"
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Premenstrual syndrome"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menstruasi syndrome"
+                },
+                {
+                    "isRight": false,
+                    "data": "Menopause syndrome"
+                },
+                {
+                    "isRight": false,
+                    "data": "Endometriosis syndrome"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Gangguan pada sistem reproduksi manusia yang disebabkan infeksi bakteri Treponema pallidum adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Penyakit raja singa atau sifilis adalah infeksi menular seksual (IMS) yang disebabkan oleh bakteri. Penyebab sifilis adalah bakteri yang bernama Treponema pallidum. Cara paling umum penyebaran sifilis adalah melalui kontak dengan luka orang yang terinfeksi selama aktivitas seksual. Bakteri masuk ke dalam tubuh melalui luka kecil atau lecet pada kulit atau selaput lendir.\n\nSiapa pun yang aktif secara seksual bisa terkena sifilis, tetapi beberapa orang memiliki peningkatan risiko terinfeksi. Risiko akan jadi lebih tinggi jika:\n\n1. Menjadi seorang gay, biseksual, atau melakukan hubungan seks sesama pria.\n\n2. Melakukan hubungan seks tanpa kondom, terutama jika memiliki banyak pasangan.\n\n3. Mengidap HIV/AIDS.\n\n4. Berhubungan seks dengan seseorang yang mengidap sifilis.\n\n5. Mengidap IMS jenis lain, seperti klamidia, gonore atau herpes."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Sifilis"
+                },
+                {
+                    "isRight": false,
+                    "data": "AIDS"
+                },
+                {
+                    "isRight": false,
+                    "data": "Gonorrhea"
+                },
+                {
+                    "isRight": false,
+                    "data": "Herpes simpleks"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Faktor yang bisa meningkatkan risiko seseorang terkena sifilis pada pria adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Penyakit raja singa atau sifilis adalah infeksi menular seksual (IMS) yang disebabkan oleh bakteri. Penyebab sifilis adalah bakteri yang bernama Treponema pallidum. Cara paling umum penyebaran sifilis adalah melalui kontak dengan luka orang yang terinfeksi selama aktivitas seksual. Bakteri masuk ke dalam tubuh melalui luka kecil atau lecet pada kulit atau selaput lendir.\n\nSiapa pun yang aktif secara seksual bisa terkena sifilis, tetapi beberapa orang memiliki peningkatan risiko terinfeksi. Risiko akan jadi lebih tinggi jika:\n\n1. Menjadi seorang gay, biseksual, atau melakukan hubungan seks sesama pria.\n\n2. Melakukan hubungan seks tanpa kondom, terutama jika memiliki banyak pasangan.\n\n3. Mengidap HIV/AIDS.\n\n4. Berhubungan seks dengan seseorang yang mengidap sifilis.\n\n5. Mengidap IMS jenis lain, seperti klamidia, gonore atau herpes."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Menyukai kopi"
+                },
+                {
+                    "isRight": false,
+                    "data": "Rajin berolahraga"
+                },
+                {
+                    "isRight": false,
+                    "data": "Sering begadang"
+                },
+                {
+                    "isRight": true,
+                    "data": "Mengidap HIV/AIDS"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Faktor yang bisa meningkatkan risiko seseorang terkena impotensi pada pria adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Impotensi adalah ketidakmampuan pria untuk mendapatkan dan mempertahankan ereksi. Kondisi ini juga dikenal sebagai disfungsi ereksi dan dapat memengaruhi kemampuan pria untuk melakukan hubungan seksual yang memuaskan. Impotensi adalah kondisi yang sangat umum dan dapat terjadi pada semua usia. Namun, paling sering terjadi pada pria yang lebih tua.\n\nMeski bisa terjadi pada semua pria dewasa, ada berbagai faktor yang dapat meningkatkan risiko pria untuk mengalami impotensi, di antaranya: \n\n1. Kondisi medis tertentu, terutama diabetes dan jantung.\n\n2. Penggunaan tembakau yang dapat membatasi aliran darah yang menuju ke pembuluh darah dan arteri. Kondisi ini meningkatkan risiko terjadinya masalah kesehatan kronis yang berujung pada disfungsi ereksi.\n\n3. Kelebihan berat badan, terutama jika mengalami obesitas.\n\n4. Menjalani perawatan medis tertentu, seperti operasi prostat atau pengobatan radiasi untuk kanker.\n\n5. Cedera, terutama jika merusak saraf atau arteri yang mengontrol ereksi.\n\n6. Konsumsi obat tertentu, termasuk obat golongan antidepresan, antihistamin, dan obat untuk tekanan darah tinggi, nyeri, atau kondisi prostat.\n\n7. Kondisi psikologis, seperti stres, kecemasan atau depresi.\n\n8. Penyalahgunaan narkoba dan alkohol, terutama jika pengidap merupakan pengguna narkoba jangka panjang atau peminum berat."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Mengidap flu ringan"
+                },
+                {
+                    "isRight": true,
+                    "data": "Penyalahgunaan narkoba dan alkohol"
+                },
+                {
+                    "isRight": false,
+                    "data": "Rajin menkonsumsi buah-buahan"
+                },
+                {
+                    "isRight": false,
+                    "data": "Rutin melakukan senam"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Berikut ini merupakan faktor yang dapat meningkatkan risiko pria untuk mengalami impotensi kecuali ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Impotensi adalah ketidakmampuan pria untuk mendapatkan dan mempertahankan ereksi. Kondisi ini juga dikenal sebagai disfungsi ereksi dan dapat memengaruhi kemampuan pria untuk melakukan hubungan seksual yang memuaskan. Impotensi adalah kondisi yang sangat umum dan dapat terjadi pada semua usia. Namun, paling sering terjadi pada pria yang lebih tua.\n\nMeski bisa terjadi pada semua pria dewasa, ada berbagai faktor yang dapat meningkatkan risiko pria untuk mengalami impotensi, di antaranya: \n\n1. Kondisi medis tertentu, terutama diabetes dan jantung.\n\n2. Penggunaan tembakau yang dapat membatasi aliran darah yang menuju ke pembuluh darah dan arteri. Kondisi ini meningkatkan risiko terjadinya masalah kesehatan kronis yang berujung pada disfungsi ereksi.\n\n3. Kelebihan berat badan, terutama jika mengalami obesitas.\n\n4. Menjalani perawatan medis tertentu, seperti operasi prostat atau pengobatan radiasi untuk kanker.\n\n5. Cedera, terutama jika merusak saraf atau arteri yang mengontrol ereksi.\n\n6. Konsumsi obat tertentu, termasuk obat golongan antidepresan, antihistamin, dan obat untuk tekanan darah tinggi, nyeri, atau kondisi prostat.\n\n7. Kondisi psikologis, seperti stres, kecemasan atau depresi.\n\n8. Penyalahgunaan narkoba dan alkohol, terutama jika pengidap merupakan pengguna narkoba jangka panjang atau peminum berat."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Mengkonsumsi obat-obatan tertentu"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penyalahgunaan narkoba dan alkohol"
+                },
+                {
+                    "isRight": true,
+                    "data": "Rajin menkonsumsi buah-buahan"
+                },
+                {
+                    "isRight": false,
+                    "data": "Mengidap diabetes"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Pertumbuhan tumor jinak pada dinding otot rahim yang menyerang perempuan pada usia subur disebut ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Mioma uteri atau sering disebut miom adalah tumor jinak pada dinding rahim (uterus) seorang wanita. Tumor jinak ini dapat tumbuh besar hingga menyebabkan nyeri dan perdarahan hebat pada saat menstruasi.\n\nGejala mioma uteri dapat berbeda-beda. Ada wanita yang tidak merasakan gejala sama sekali, ada pula yang mengalami nyeri dan perdarahan hebat. Gejala lain yang bisa menyertai adalah:\n\n1. Memanjangnya periode haid (> 7 hari).\n\n2. Sering buang air kecil.\n\n3. Buang air kecil yang tidak lancar.\n\n4. Konstipasi."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Miom"
+                },
+                {
+                    "isRight": false,
+                    "data": "Randang panggul"
+                },
+                {
+                    "isRight": false,
+                    "data": "Prolaps uteri"
+                },
+                {
+                    "isRight": false,
+                    "data": "Sindrom ovarium"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Faktor yang bisa meningkatkan risiko seseorang terkena prolaps uteri atau rahim turun adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Prolaps uteri disebabkan oleh melemahnya otot dan jaringan dasar pada panggul. Alhasil, otot dan jaringan tersebut tidak lagi dapat menopang berat uterus atau rahim. Nah, melemahnya otot dan jaringan dasar panggul dapat dipicu oleh berbagai faktor risiko, antara lain:\n\n1. Kehamilan atau melahirkan dengan persalinan normal melalui vagina.\n\n2. Melemahnya otot panggul seiring bertambahnya usia.\n\n3. Melemahnya dan hilangnya tonus jaringan setelah menopause dan hilangnya hormon estrogen tubuh.\n\n4. Adanya kondisi yang menyebabkan peningkatan tekanan pada perut, seperti asma atau bronkitis.\n\n5. Mengalami obesitas sehingga meningkatkan ketegangan tambahan pada otot panggul.\n\n6. Kebiasaan merokok."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "Kebiasaan melamun"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kebiasaan pacaran"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kebiasaan makan pedas"
+                },
+                {
+                    "isRight": true,
+                    "data": "Kebiasaan merokok"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "tipe": "textandtext",
+            "gambar": "",
+            "pertanyaan": "Dampak negatif keseringan onani adalah ...",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Onani, atau masturbasi merupakan aktivitas ketika seseorang memberikan rangsangan pada alat kelaminnya untuk memberi kepuasan seks. Aktivitas tersebut dikabarkan dapat memberikan manfaat kesehatan jika dilakukan dalam frekuensi yang normal, semnetara jika dilakukan berlebiha, ada bahaya onani yang mengintai kesehatan pria.\n\nAda beberapa bahaya onani yang mengintai pada pria, jika dilakukan berlebih, antara lain: \n\n1. Menimbulkan rasa bersalah \n\n2. Kecanduan\n\n3. Mencederai penis\n\n4. Meningkatkan risiko kanker prostat"
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "Peningkatan sensitivitas seksual"
+                },
+                {
+                    "isRight": false,
+                    "data": "Meningkatkan risiko kanker prostat"
+                },
+                {
+                    "isRight": false,
+                    "data": "Penis mengecil"
+                },
+                {
+                    "isRight": false,
+                    "data": "Kemandulan"
+                }
+            ]
+        }
+    ]
+}

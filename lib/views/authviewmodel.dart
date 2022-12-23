@@ -2,6 +2,7 @@ part of 'views.dart';
 
 class AuthViewModel {
   final bool? isOffline;
+  final bool? isLoading;
   final GlobalKey<FormState>? loginFormKey;
   final GlobalKey<FormState>? registerFormKey;
 
@@ -46,6 +47,7 @@ class AuthViewModel {
     this.signUpUsingEmailPassword,
     this.clearSignUpAction,
     this.signInUsingGoogle,
+    this.isLoading,
   });
 
   factory AuthViewModel.create(Store<AppState> store) {
@@ -79,6 +81,7 @@ class AuthViewModel {
         context: context,
         email: email,
         password: password,
+        store: store,
       );
 
       store.dispatch(
@@ -101,6 +104,7 @@ class AuthViewModel {
         name: name,
         email: email,
         password: password,
+        store: store,
       );
 
       store.dispatch(
@@ -123,6 +127,7 @@ class AuthViewModel {
 
     return AuthViewModel(
       isOffline: store.state.authState?.isOffline,
+      isLoading: store.state.authState?.isLoading,
       loginFormKey: _loginFormKey,
       registerFormKey: _registerFormKey,
       emailLoginController: _emailLController,

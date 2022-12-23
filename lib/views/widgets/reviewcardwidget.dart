@@ -8,6 +8,7 @@ Widget reviewCardWidget({
   String? penjelasan,
   bool? isCorrect = true,
   bool? isJawabanImage = false,
+  required void Function() onImageOpen,
 }) =>
     Container(
       decoration: BoxDecoration(
@@ -79,37 +80,54 @@ Widget reviewCardWidget({
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                                image: NetworkImage(jawaban ??
+                                image: AssetImage(jawaban ??
                                     'https://sdnsusukan07.sch.id/asset/images/noimage.jpg'),
                                 fit: BoxFit.fill),
                           ),
                         )
                       : const SizedBox(),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Divider(
+                      thickness: 2,
+                    ),
+                  ),
                   const SizedBox(
                     height: 20,
                   ),
                   (gambar != "")
                       ? Padding(
                           padding: const EdgeInsets.only(bottom: 20),
-                          child: Container(
-                            width: 180,
-                            height: 120,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              image: DecorationImage(
-                                  image: NetworkImage(gambar ??
-                                      'https://sdnsusukan07.sch.id/asset/images/noimage.jpg'),
-                                  fit: BoxFit.fill),
+                          child: GestureDetector(
+                            onTap: onImageOpen,
+                            child: Image.asset(
+                              gambar ??
+                                  'https://sdnsusukan07.sch.id/asset/images/noimage.jpg',
+                              width: 180,
+                              fit: BoxFit.cover,
                             ),
-                          ),
+                          )
+                          // Container(
+                          //   width: 180,
+                          //   height: 120,
+                          //   decoration: BoxDecoration(
+                          //     borderRadius: BorderRadius.circular(15),
+                          //     image: DecorationImage(
+                          //         image: AssetImage(gambar ??
+                          //             'https://sdnsusukan07.sch.id/asset/images/noimage.jpg'),
+                          //         fit: BoxFit.fill),
+                          //   ),
+                          // ),
+                          )
+                      : const SizedBox(),
+                  (penjelasan != "")
+                      ? Text(
+                          penjelasan ??
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor. Duis aliquam ex lacus, et finibus nibh bibendum sodales.",
+                          textAlign: TextAlign.start,
+                          style: interheadline4.copyWith(color: spanishGray),
                         )
                       : const SizedBox(),
-                  Text(
-                    penjelasan ??
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra non odio quis auctor. Duis aliquam ex lacus, et finibus nibh bibendum sodales.",
-                    textAlign: TextAlign.justify,
-                    style: interheadline4.copyWith(color: spanishGray),
-                  ),
                 ],
               ),
             ),

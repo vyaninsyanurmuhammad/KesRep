@@ -9,13 +9,13 @@
                     "level": "1",
                     "medalRequred": 0,
                     "title": "Kewanitaan",
+                    "gambar": "",
                     "quiz": [
                         {
                             "id": "1",
                             "tipe": "textandtext",
                             "gambar": "",
                             "pertanyaan": "Suatu keadaan fisik, ",
-                            "sound": "1.mp3",
                             "penjelasan": {
                                 "gambar": "",
                                 "deskripsi": "Kesehatan reproduksi--selanjutnya disingkat kespro,"

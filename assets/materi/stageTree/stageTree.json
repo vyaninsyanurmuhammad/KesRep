@@ -1,0 +1,325 @@
+{
+    "id": "3",
+    "level": "3",
+    "medalRequred": 2,
+    "title": "Fakta/Mitos",
+    "gambar": "assets/materi/bolehtidak.png",
+    "quiz": [
+        {
+            "id": "1",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Tidak boleh keramas saat menstruasi.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tidak boleh keramas saat menstruasi adalah mitos. Sebuah penelitian mematahkan mitos ini dan menunjukkan bahwa tidak ada hubungannya antara minuman bersoda dengan kelancaran menstruasi. Penyebab menstruasi tidak lancar adalah karena hormon yang bertugas mengatur siklus menstruasi tidak seimbang, perubahan berat badan, atau karena stres."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "2",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Tidak boleh minum minuman dingin saat menstruasi.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Wanita dilarang mengonsumsi minuman dingin menjelang menstruasi adalah mitos. Faktanya menstruasi berhubungan dengan sistem reproduksi wanita, sedangkan makanan dan minuman berhubungan dengan sistem pencernaan. Jadi, mengonsumsi minuman dingin tidak berpengaruh pada keterlambatan menstruasi seseorang. Menstruasi yang datang terlambat disebabkan oleh tiga hal, yaitu adanya masalah pada dinding rahim, masalah hormonal dari indung telur, dan masalah psikologis seperti stres."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "3",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Makan nanas tidak dapat menggugurkan kehamilan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Makan nanas tidak dapat menggugurkan kehamilan adalah fakta. Nanas aman dikonsumsi asalkan tidak berlebihan. Konsumsi yang berlebihan akan menimbulkan rasa mual pada mereka yang tahan rasa asam buah nanas dan menyebabkan masalah sendiri bagi pencernaan."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "4",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pacar tidak berhak melakukan apa saja karena kita sudah menjadi miliknya.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Tak seorangpun berhak atas diri kita selain kita sendiri. Pacar dan suami pun tidak berhak memperlakukan kita seenaknya."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "5",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Perawan akan berdarah pada hubungan seks pertama atau malam pertama.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Perawan akan berdarah pada hubungan seks pertama atau malam pertama adalah mitos. Keperawanan punya aspek fisik yang mengacu pada selaput dara dan aspek sosial yang mengacu pada seorang yang pernah berhubungan seksual. Selaput dara memiliki bentuk elastis. Perempuan akan mengeluarkan cairan vagina jika terangsang sehingga tidak semua perempuan mengalami pendarahan saat berhubungan seks untuk pertama kalinya."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "6",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Perempuan yang lebih cepat mendapat haid pertama (menarche) adalah perempuan nakal.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Faktanya tidak ada hubungannya antara menarche dengan perilaku nakal. Menarche pada usia 10-15 tahun dipengaruhi faktor gizi dan keturunan. Semakin muda usia menarche, semakin tua usia menopause."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "7",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Payudara tidak bisa diperbesar hanya dengan meremasnya.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Besar kecilnya payudara disebabkan faktor keturunan. Meremas hanya memperbesar sementara karena rangsangan. Sementara itu, payudara besar tidak mempengaruhi jumlah produksi ASI."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "8",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Hubungan seks sekali tidak menyebabkan hamil.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Pertemuan sperma dan sel telur dapat menyebabkan kehamilan walaupun hanya berhubungan seks sekali."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "9",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Pendidikan seks akan mendorong lebih banyak pemuda untuk melakukan hubungan seks.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Berbagai penelitian yang dilakukan oleh Organisasi Kesehatan Dunia (WHO) telah menunjukkan bahwa program pendidikan seks yang komprehensif tidak meningkatkan aktivitas seksual, pada kenyataannya telah menunjukkan bahwa itu membantu kaum muda menunda inisiasi seksual. Bagi mereka yang sudah pernah berhubungan seks, program ini menunjukkan peningkatan penggunaan kondom dan mengurangi frekuensi hubungan seksual."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "10",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Penis yang lebih besar tidak selalu lebih enak.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Media mungkin menyamakan penis yang lebih besar itu lebih enak namun, itu benar-benar tergantung pada pasangannya dan mungkin berbeda untuk setiap individu. Terkadang penetrasi tidak selalu menjadi satu-satunya hal yang disukai orang di tempat tidur."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "11",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Tidak boleh melakukan hubungan seks saat menstruasi.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Berhubungan seks saat haid lebih berisiko terkena dan menularkan penyakit infeksi melalui seks. Penyakit menular seksual yang berkaitan dengan haid merupakan jenis yang ditularkan melalui darah, seperti infeksi HIV dan hepatitis."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "12",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Vagina yang longgar menunjukkan jumlah orang yang dia pernah berhubungan seks dengan.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Vagina adalah otot yang secara alami akan melunak dan memanjang ketika seseorang terangsang untuk memungkinkan penyisipan yang lebih mudah. Jika mereka cemas atau gugup, dinding vagina akan berkontraksi, membuatnya sulit untuk dimasukkan. Itu tidak ada hubungannya dengan jumlah orang yang pernah berhubungan seks."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "13",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "HIV adalah penyakit yang hanya menyerang pekerja seks dan homoseksual.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Meskipun pria yang berhubungan seks dengan sesama pria, para pekerja seks dan suntikan pengguna narkoba membuat risiko paling tinggi untuk tertular HIV, siapa pun bisa tertular HIV. Virusnya tidak membeda-bedakan."
+            },
+            "pilihan": [
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "14",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Usia pria ada hubungannya dengan kesuburannya.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Faktanya adalah jumlah dan kualitas sperma akan mulai menurun ketika seorang pria menginjak usia 40 tahun. Penurunannya sendiri berlangsung lambat dan bertahap. Namum hal ini dapat diperburuk jika pria tersebut memiliki infeksi saluran kencing atau varikokel."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        },
+        {
+            "id": "15",
+            "tipe": "textandimage",
+            "gambar": "",
+            "pertanyaan": "Sering melakukan onani atau masturbasi dapat menurunkan jumlah sperma.",
+            "penjelasan": {
+                "gambar": "",
+                "deskripsi": "Masturbasi yang terlalu sering dapat menurunkan jumlah sperma dan kualitasnya. Sehingga jika Anda ingin berhubungan seksual sebaiknya diselang 2-3 hari untuk meningkatkan kualitas spermanya."
+            },
+            "pilihan": [
+                {
+                    "isRight": true,
+                    "data": "assets/materi/stageTree/1.1.1.png"
+                },
+                {
+                    "isRight": false,
+                    "data": "assets/materi/stageTree/1.1.2.png"
+                }
+                
+            ]
+        }
+        
+    ]
+}
