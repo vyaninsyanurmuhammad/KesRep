@@ -67,6 +67,8 @@ class OnBoardingPage extends StatelessWidget {
                               onTap: () {
                                 ClickHelper.clickSound();
 
+                                viewModel.setInitialScreen!();
+
                                 Navigator.pushNamed(context, '/loadingpage');
                               },
                             )

@@ -5,8 +5,13 @@ class InitialScreenHelper {
     SharedPreferences? preferences;
     preferences = await SharedPreferences.getInstance();
     int? initScreen = preferences.getInt("initScreen");
-    await preferences.setInt("initScreen", 1);
 
     return initScreen;
+  }
+
+  static Future<void> setInitialScreen() async {
+    SharedPreferences? preferences;
+    preferences = await SharedPreferences.getInstance();
+    await preferences.setInt("initScreen", 1);
   }
 }

@@ -7,7 +7,7 @@ class ValidatorHelper {
     }
 
     if (name.isEmpty) {
-      return 'Name can\'t be empty';
+      return 'Nama tidak boleh kosong';
     }
 
     return null;
@@ -22,9 +22,9 @@ class ValidatorHelper {
         r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$");
 
     if (email.isEmpty) {
-      return 'Email can\'t be empty';
+      return 'Email tidak boleh kosong';
     } else if (!emailRegExp.hasMatch(email)) {
-      return 'Enter a correct email';
+      return 'Masukkan Email yang benar';
     }
 
     return null;
@@ -36,7 +36,7 @@ class ValidatorHelper {
     }
 
     if (password.isEmpty) {
-      return 'Password can\'t be empty';
+      return 'Password tidak boleh kosong';
     }
 
     return null;

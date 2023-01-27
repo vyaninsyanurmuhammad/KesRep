@@ -38,34 +38,62 @@ part of 'widgets.dart';
 
 Widget imageQuizViewerWidget(
         {String? image, required void Function() onClose}) =>
-    Stack(
-      alignment: Alignment.bottomCenter,
-      children: [
-        ClipRRect(
-          child: PhotoView(
-            backgroundDecoration: BoxDecoration(color: white.withOpacity(0.7)),
-            minScale: PhotoViewComputedScale.contained * 1,
-            errorBuilder: (context, exception, stackTrace) {
-              return SizedBox(
-                width: 180,
-                height: 120,
-                child: Center(
-                  child: Text(
-                    "Image Error",
-                    style: interheadline3.copyWith(color: davysGrey),
+    Container(
+      color: white.withOpacity(0.7),
+      child: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          // ClipRRect(
+          //   child: PhotoView(
+          //     backgroundDecoration: BoxDecoration(color: white.withOpacity(0.7)),
+          //     minScale: PhotoViewComputedScale.contained * 1,
+
+          //     errorBuilder: (context, exception, stackTrace) {
+          //       return SizedBox(
+          //         width: 180,
+          //         height: 120,
+          //         child: Center(
+          //           child: Text(
+          //             "Image Error",
+          //             style: interheadline3.copyWith(color: davysGrey),
+          //           ),
+          //         ),
+          //       );
+          //     },
+          //     imageProvider: AssetImage(
+          //       image ?? 'assets/materi/risiko.png',
+          //     ),
+          //   ),
+          // ),
+
+          Center(
+            child: PhotoView(
+              backgroundDecoration:
+                  const BoxDecoration(color: Colors.transparent),
+              minScale: PhotoViewComputedScale.contained * 1,
+              errorBuilder: (context, exception, stackTrace) {
+                return SizedBox(
+                  width: 180,
+                  height: 120,
+                  child: Center(
+                    child: Text(
+                      "Image Error",
+                      style: interheadline3.copyWith(color: davysGrey),
+                    ),
                   ),
-                ),
-              );
-            },
-            imageProvider: AssetImage(
-              image ?? 'assets/materi/risiko.png',
+                );
+              },
+              imageProvider: AssetImage(
+                image ?? 'assets/materi/risiko.png',
+              ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 85),
-          child: bigButtonWidget(
-              text: "Close", width: 100, onTap: onClose, isDisable: false),
-        )
-      ],
+
+          Padding(
+            padding: const EdgeInsets.only(bottom: 85),
+            child: bigButtonWidget(
+                text: "Close", width: 100, onTap: onClose, isDisable: false),
+          )
+        ],
+      ),
     );
